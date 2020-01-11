@@ -56,6 +56,7 @@ TASK 1: Intialize Access Guided Configuration (AGC)
 |    screen and click "Next"                                                                   |
 +----------------------------------------------------------------------------------------------+
 | |image003|                                                                                   |
+|                                                                                              |
 | |image004|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
@@ -275,7 +276,7 @@ TASK 8: Application Groups
 +----------------------------------------------------------------------------------------------+
 | 6. Review the **Applications Groups** dialogue window following completion of step 5 and     |
 |                                                                                              |
-| 7. Click the **Save & Next** button at the bottom of the dialogue window.                                                       |
+| 7. Click the **Save & Next** button at the bottom of the dialogue window.                    |
 +----------------------------------------------------------------------------------------------+
 | |image019|                                                                                   |
 +----------------------------------------------------------------------------------------------+
@@ -284,47 +285,43 @@ TASK 9: Contextual Access
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +----------------------------------------------------------------------------------------------+
-| 1. Begin by selecting: **Local Traffic** -> **Virtual Servers**                              |
+| 1. In the **Contextual Access Properties** dialigue window, enter **app1-access** in the     |
 |                                                                                              |
-| 2. Click the **Create** button (far right)                                                   |   
+|    **Name** field.                                                                           |   
+|                                                                                              |
+| 2. Select **Application Group** from the **Resource Type** drop down.                        |   
+|                                                                                              |
+| 3. Select **app1** from the **Resource** drop down.                                          |  
+|                                                                                              |
+| 4. Select **agc-f5lab-AD** from the **Primary Authentication** drop down.                    |  
+|                                                                                              |
+| 5. Select **agc-app-header** from the **HTTP Header** drop down.                             |  
+|                                                                                              |
+| 6. Check the **Enable Addtional Checks** checkbox.                                           |  
+|                                                                                              |
+| 7. In the **Trigger Rules** section that appears, click the **Add** button                   |
 +----------------------------------------------------------------------------------------------+
-| |image017|                                                                                   |
+| |image020|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 3. In the **New Virtual Server** window, key in the following as shown:                      |
+| 8. In the **Contextual Access Properties > Trigger > New** window, chnage the **Name**       |
 |                                                                                              |
-|    -  **Name**: **app.f5demo.com**                                                           |
+|    field to **app1-rule**.                                                                   |
 |                                                                                              |
-|    -  **Destination Address/Mask**: **10.1.10.100**                                          |
-|                                                                                              |
-|    -  **Service Port**: **443**                                                              |
-|                                                                                              |
-|    -  **HTTP Profile:** **http** (drop down)                                                 |
-|                                                                                              |
-|    -  **SSL Profile (client):** **app.f5demo.com-clientssl**                                 |
-|                                                                                              |
-|    -  **Source Address Translation:**  **Auto Map**                                          |
-|                                                                                              |
-| 4. Scroll to the **Access Policy** section                                                   |
-|                                                                                              |
-|    -  **Access Profile**: **app.f5demo.com-policy**                                          |
-|                                                                                              |
-|    -  **Per-Request Policy:** **saml\_policy**                                               |
-|                                                                                              |
-| 5. Scroll to the Resource section                                                            |
-|                                                                                              |
-|    -  **Default Pool**: **app.f5demo.com\_pool**                                             |
-|                                                                                              |
-| 6. Scroll to the bottom of the configuration window and click **Finished**                   |
-|                                                                                              |
-| *Note: The use of the Per-Request Policy is to provide header injection and other controls.* |
-|                                                                                              |
-| *These will be more utilized later in the lab.*                                              |
+| 9. Check the **User Group Check** checkbox.                                                  |
 +----------------------------------------------------------------------------------------------+
-| |image018|                                                                                   |
+| |image021|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------+
+| 8. In the **Contextual Access Properties > Trigger > New** window, chnage the **Name**       |
 |                                                                                              |
-| |image019|                                                                                   | 
+|    field to **app1-rule**.                                                                   |
+|                                                                                              |
+| 9. Check the **User Group Check** checkbox.                                                  |
++----------------------------------------------------------------------------------------------+
+| |image021|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 TASK 6: Test the SAML SP
