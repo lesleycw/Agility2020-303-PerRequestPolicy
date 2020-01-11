@@ -63,9 +63,9 @@ TASK 2: Name Congiguration and define Device Posture
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +----------------------------------------------------------------------------------------------+
-| 1. In the **Configuration Name** dialogie box, enter **agc-app.acme.com                      |
+| 1. In the **Configuration Name** dialogue box, enter **agc-app.acme.com**                    |
 |                                                                                              |
-| 2. Click **Save & Next" at the bottom of the dislogue window.                                |
+| 2. Click **Save & Next** at the bottom of the dialogue window.                               |
 +----------------------------------------------------------------------------------------------+
 | |image005|                                                                                   |
 +----------------------------------------------------------------------------------------------+
@@ -78,46 +78,53 @@ TASK: 3: Configure Virtual Server Properties
 |                                                                                              |
 | 2. Select the **Host** radio button under **Destination Address**                            |
 |                                                                                              |
-| 3. Click the **Checkbox** next to the previously created **app.f5demo.com** and select       |                                                                                              |                                                                                              |
-|    **Bind/Unbind IdP Connectors** button at the bottom of the GUI.                           | 
-+----------------------------------------------------------------------------------------------+
+| 3. Enter the IP Address **10.1.10.100** in the dialogue box for **Destination Address**.     |                                                                                              |                                                                                              |
+| 4. Confirm the **Rediect Port** is **80** and **HTTP**.                                      |                                                                                              |                                                                                              |
+| 5. Select the **Use Existing** radio button under **Client SSL Profile**                     |
+|                                                                                              |
+| 6. Move the **f5demo** Client SSL Profile to the left, **Selected**                          |
+|                                                                                              |
+| 7. Click **Save & Next** at the bottom of the dialogue window.                               | +----------------------------------------------------------------------------------------------+
 | |image006|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
+TASK: 4: Configure User Identity  
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 +----------------------------------------------------------------------------------------------+
-| 3. In the **Edit SAML IdP’s that use this SP** dialogue box click the **Add New Row** button |
+| 1. Enter **agc-f5lab-AD** in the **Name** field                                              |
 |                                                                                              |
-| 4. In the added row click the **Down Arrow** under **SAML IdP Connectors** and select the    |
+| 2. Confirm **Authentication Type** is **AAA**                                                |
 |                                                                                              |
-|    **/Common/idp.partner.com** SAML IdP Connector previously created.                        |
+| 3. Confirm **Choose Authentication Server Type** is **Active Directory**                     |
 |                                                                                              |
-| 5. Click the **Update** button and the **OK** button at the bottom of the dialogue box.      |
-+----------------------------------------------------------------------------------------------+
+| 4. Select **f5lab.local** from the **Choose Authentication Server** drop down.               |
+|                                                                                              |
+| 5. Check the **Active Directory Query Properties** checkbox.                                 |
+|                                                                                              |
+| 6. Check the **Fetch Nested Group** checkbox.                                                |
+|                                                                                              |
+| 7. Move the **memberOf** to the left under **Required Attributes**                           |
+|                                                                                              |
+| 8. Click **Save & Next** at the bottom of the dialogue window.                               |    +----------------------------------------------------------------------------------------------+
 | |image007|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 6. Under the **Access** -> **Federation** -> **SAML Service Provider** ->                    |
+| 9. In the dialogue window that follows for **User Identity**, confirm **agc-f5lab-AD** is    |
 |                                                                                              |
-|    **Local SP Services** menu you should now see the following (as shown):                   |
-|                                                                                              |
-|    -  **Name**: **app.f5demo.com**                                                           |
-|                                                                                              |
-|    -  **SAML IdP Connectors**: **idp.partner.com**                                           |
+|    listed and then click **Save & Next** at the bottom if the dialogue window.               |
 +----------------------------------------------------------------------------------------------+
 | |image008|                                                                                   |
 +----------------------------------------------------------------------------------------------+
  
-TASK 4: Configure the SAML SP Access Policy
+TASK 5: Multi Factor Authentication 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Refer to the instructions and screen shots below:
-
 +----------------------------------------------------------------------------------------------+
-| 1. Begin by selecting: **Access** -> **Profiles/Policies** -> **Access Profiles**            |
-|    **(Per-Session Policies)**                                                                |
+| 1. In the **Multi Factor Authenticatio** dialogue box, click **Save & Next** at the bottom   |
 |                                                                                              |
-| 2. Click the **Create** button (far right)                                                   |
+|     of the dialogue window.                                                                  |
 +----------------------------------------------------------------------------------------------+
 | |image009|                                                                                   |
 +----------------------------------------------------------------------------------------------+
