@@ -121,9 +121,9 @@ TASK: 4: Configure User Identity
 +----------------------------------------------------------------------------------------------+
 | |image008|                                                                                   |
 +----------------------------------------------------------------------------------------------+
- 
-TASK 5: Multi Factor Authentication 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+TASK 5: Multi Factor Authentication
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +----------------------------------------------------------------------------------------------+
 | 1. In the **Multi Factor Authenticatio** dialogue box, click **Save & Next** at the bottom   |
@@ -315,10 +315,10 @@ Refer to the instructions and screen shots below:
 .. |image007| image:: media/lab1-007.PNG
    :width: 4.5in
    :height: 2.28in
-.. |image008| image:: media/lab1-008.PNG
+.. |image008| image:: media/lab1-010.PNG
    :width: 4.5in
    :height: 0.96in
-.. |image009| image:: media/lab1-009.PNG
+.. |image009| image:: media/lab1-011.PNG
    :width: 4.5in
    :height: 1.69in
 .. |image010| image:: media/lab1-010.PNG
