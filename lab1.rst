@@ -249,7 +249,7 @@ TASK 8: Application Groups
 +----------------------------------------------------------------------------------------------+
 | 2. **Application Group Properties** dialogue window, enter **app1** in the **Field**.        |
 |                                                                                              |
-| 3. Move **/apps/app1* ** from the **Available** side to the **Selected** side under          |
+| 3. Move **/apps/app1\* ** from the **Available** side to the **Selected** side under          |
 |                                                                                              |
 |    **Application List**.                                                                     |
 |                                                                                              |
@@ -263,9 +263,9 @@ TASK 8: Application Groups
 |                                                                                              |
 |    repeat steps 2 through 4 using the following values:                                      |
 |                                                                                              |
-|    - **Name**: app2, **Selected**: **/apps/app2* **                                          |
+|    - **Name**: app2, **Selected**: **/apps/app2\* **                                          |
 |                                                                                              |
-|    - **Name**: app3, **Selected**: **/apps/app3* **                                          |
+|    - **Name**: app3, **Selected**: **/apps/app3\* **                                          |
 |                                                                                              |
 |    - **Name**: base, **Selected**: **/**                                                     |
 +----------------------------------------------------------------------------------------------+
