@@ -353,63 +353,63 @@ Refer to the instructions and screen shots below:
 .. |image021| image:: media/lab1-021.png
    :width: 4.5in
    :height: 1.93in
-.. |image002| image:: media/lab1-022.PNG
+.. |image022| image:: media/lab1-022.PNG
    :width: 4.5in
    :height: 3.37in
-.. |image003| image:: media/lab1-023.PNG
+.. |image023| image:: media/lab1-023.PNG
    :width: 4.5in
    :height: 3.38in
-.. |image004| image:: media/lab1-024.PNG
+.. |image024| image:: media/lab1-024.PNG
    :width: 4.5in
    :height: 0.73in
-.. |image005| image:: media/lab1-025.PNG
+.. |image025| image:: media/lab1-025.PNG
    :width: 4.5in
    :height: 3.37in
-.. |image006| image:: media/lab1-026.PNG
+.. |image026| image:: media/lab1-026.PNG
    :width: 4.5in
    :height: 1.15in
-.. |image007| image:: media/lab1-027.PNG
+.. |image027| image:: media/lab1-027.PNG
    :width: 4.5in
    :height: 2.28in
-.. |image008| image:: media/lab1-028.PNG
+.. |image028| image:: media/lab1-028.PNG
    :width: 4.5in
    :height: 0.96in
-.. |image009| image:: media/lab1-029.PNG
+.. |image029| image:: media/lab1-029.PNG
    :width: 4.5in
    :height: 1.69in
-.. |image010| image:: media/lab1-030.PNG
+.. |image030| image:: media/lab1-030.PNG
    :width: 4.5in
    :height: 2.94in
-.. |image011| image:: media/lab1-031.PNG
+.. |image031| image:: media/lab1-031.PNG
    :width: 4.5in
    :height: 0.80in
-.. |image012| image:: media/lab1-032.PNG
+.. |image032| image:: media/lab1-032.PNG
    :width: 4.5in
    :height: 1.12in
-.. |image013| image:: media/lab1-033.PNG
+.. |image033| image:: media/lab1-033.PNG
    :width: 4.5in
    :height: 4.00in
-.. |image014| image:: media/lab1-034.PNG
+.. |image034| image:: media/lab1-034.PNG
    :width: 4.5in
    :height: 1.48in
-.. |image015| image:: media/lab1-035.PNG
+.. |image035| image:: media/lab1-035.PNG
    :width: 4.5in
    :height: 1.12in
-.. |image016| image:: media/lab1-036.PNG
+.. |image036| image:: media/lab1-036.PNG
    :width: 4.5in
    :height: 1.54in
-.. |image017| image:: media/lab1-037.png
+.. |image037| image:: media/lab1-037.png
    :width: 4.5in
    :height: 1.29in
-.. |image018| image:: media/lab1-038.png
+.. |image038| image:: media/lab1-038.png
    :width: 4.5in
    :height: 5.46in
-.. |image019| image:: media/lab1-039.png
+.. |image039| image:: media/lab1-039.png
    :width: 4.5in
    :height: 2.13in
-.. |image020| image:: media/lab1-040.png
+.. |image040| image:: media/lab1-040.png
    :width: 4.5in
    :height: 1.01in
-.. |image021| image:: media/lab1-041.png
+.. |image041| image:: media/lab1-041.png
    :width: 4.5in
    :height: 1.93in
