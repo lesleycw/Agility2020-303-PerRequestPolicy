@@ -323,7 +323,7 @@ Refer to the instructions and screen shots below:
 | |image021|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
-.. |image001| image:: media/lab-001.PNG
+.. |image001| image:: media/lab1-001.PNG
    :width: 4.5in
    :height: 0.74in
 .. |image002| image:: media/image002.png
