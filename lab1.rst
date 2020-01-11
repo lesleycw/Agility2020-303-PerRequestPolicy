@@ -128,7 +128,7 @@ TASK 5: Multi Factor Authentication
 +----------------------------------------------------------------------------------------------+
 | 1. In the **Multi Factor Authenticatio** dialogue box, click **Save & Next** at the bottom   |
 |                                                                                              |
-|     of the dialogue window.                                                                  |
+|    of the dialogue window.                                                                   |
 +----------------------------------------------------------------------------------------------+
 | |image009|                                                                                   |
 +----------------------------------------------------------------------------------------------+
@@ -179,62 +179,109 @@ TASK 6: Single Sign-on & HTTP Header
 |                                                                                              |
 |    **agc-app-header** is listed, then click **Save & Next** at the bottom if the             |
 |                                                                                              |
-|     dialogue window.                                                                         |
+|    dialogue window.                                                                          |
 +----------------------------------------------------------------------------------------------+
 | |image012|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
-TASK 7: Application Properties
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TASK 7: Applications
+~~~~~~~~~~~~~~~~~~~~
 
 +----------------------------------------------------------------------------------------------+
 | 1. Check **Enable Single Sign-on (Optional)** checkbox in the                                |
 |                                                                                              |
 |    **Single Sign-on & HTTP Header** dialogue window.                                         |
 +----------------------------------------------------------------------------------------------+
-| |image010|                                                                                   |
+| |image013|                                                                                   |
 +----------------------------------------------------------------------------------------------+
   
 +----------------------------------------------------------------------------------------------+
-| 9. In the **SAML Auth** configuration window, select **/Common/app.f5demo.com** from the     |
+| 2. **Application Properties** dialogue window, click *Show Advanced Setting** in the upper   |
 |                                                                                              |
-|    **SAML Authentication**, **AAA Server** drop down menu.                                   |
-|                                                                                              | 
-| 10. Click the **Save** button at the bottom of the configuration window.                     |  
+|    right hand corner of the dialogue window.                                                 |
+|                                                                                              |
+| 3. In the **Name** field enter **agc-app.acme.com**.                                         |
+|                                                                                              |
+| 4. In the **FQDN** field enter **app.acme.com**.                                             |
+|                                                                                              |
+| 5. In the **Subpath Pattern** field enter **/apps/app1* **.                                  |
+|                                                                                              |
+| 6. On the **Subpath Pattern** row entered in Step 5, click the **+ (Plus Symbol)** twice     |
+|                                                                                              |
+|    to add to more rows.                                                                      |
+|                                                                                              |
+| 7. In the two new rows add **/apps/app2* ** and **/apps/app3* ** respectively.               |
+|                                                                                              |
+| 8. In the **Pool Configuration** section, under **Health Monitors** area move                |
+|                                                                                              |
+|    **/Common/http** to the left **Selected** side.                                           |
+|                                                                                              |
+| 9. In the **Pool Configuration** section, under **Load Balancing Method** area select        |
+|                                                                                              |
+|    **/Common/10.1.20.6** from the **IP Address/Node name**                                   |
+|                                                                                              |
+| 10. Click the **Save** button at the bottom of the dialogue window.                          |
 +----------------------------------------------------------------------------------------------+
 | |image014|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 11. In the **Visual Policy Editor** select the **Deny** along the **Successful** branch      |
+| 11. In the **Applications** dialogue window that follows, expand the **Subpaths** and ensure |
 |                                                                                              |
-|    following the **SAML Auth**                                                               |
+|    app are present for the **agc-app.acme.com row.                                           |
 |                                                                                              |
-| 12. From the **Select Ending** dialogue box select the **Allow Radio Button** and then       |
-|                                                                                              |
-|    click **Save**.                                                                           |
+| 12. Click the **Save & Next** button at the bottom of the dialogue window.                   |
 +----------------------------------------------------------------------------------------------+
 | |image015|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
+TASK 8: Application Groups
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 +----------------------------------------------------------------------------------------------+
-| 13. In the **Visual Policy Editor** click the **Apply Access Policy** (top left) and close   |
+| 1. Check the **Enable Application Groups** checkbox in the **Application Groups**            |
 |                                                                                              |
-|    the **Visual Policy Editor**.                                                             |
-|                                                                                              |
-| *Note: Additional actions can be taken in the Per Session policy (Access Policy). The lab*   |
-|                                                                                              |
-| *is simply completing authentication. Other access controls can be implemented based on the* |
-|                                                                                              |
-| *use case*                                                                                   |
+|    dialogue window.                                                                          |
 +----------------------------------------------------------------------------------------------+
 | |image016|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
-TASK 5: Create the SP Virtual Server & Apply the SP Access Policy
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
++----------------------------------------------------------------------------------------------+
+| 2. **Application Group Properties** dialogue window, enter **app1** in the **Field**.        |
+|                                                                                              |
+| 3. Move **/apps/app1* ** from the **Available** side to the **Selected** side under          |
+|                                                                                              |
+|    **Application List**.                                                                     |
+|                                                                                              |
+| 4. Click the **Save** button at the bottom of the dialogue window.                           |
++----------------------------------------------------------------------------------------------+
+| |image017|                                                                                   |
++----------------------------------------------------------------------------------------------+
 
-Refer to the instructions and screen shots below:
++----------------------------------------------------------------------------------------------+
+| 5. Click the **Add* button in the *Application Groups** dialogue window that follows and     |
+|                                                                                              |
+|    repeat steps 2 through 4 using the following values:                                      |
+|                                                                                              |
+|    - **Name**: app2, **Selected**: **/apps/app2* **                                          |
+|                                                                                              |
+|    - **Name**: app3, **Selected**: **/apps/app3* **                                          |
+|                                                                                              |
+|    - **Name**: base, **Selected**: **/**                                                     |
++----------------------------------------------------------------------------------------------+
+| |image018|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------+
+| 6. Review the **Applications Groups** dialogue window following completion of step 5 and     |
+|                                                                                              |
+| 7. Click the **Save & Next** button at the bottom of the dialogue window.                                                       |
++----------------------------------------------------------------------------------------------+
+| |image019|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
+TASK 9: Contextual Access
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +----------------------------------------------------------------------------------------------+
 | 1. Begin by selecting: **Local Traffic** -> **Virtual Servers**                              |
