@@ -196,7 +196,7 @@ TASK 7: Applications
 +----------------------------------------------------------------------------------------------+
   
 +----------------------------------------------------------------------------------------------+
-| 2. **Application Properties** dialogue window, click *Show Advanced Setting** in the upper   |
+| 2. **Application Properties** dialogue window, click **Show Advanced Setting** in the upper  |
 |                                                                                              |
 |    right hand corner of the dialogue window.                                                 |
 |                                                                                              |
@@ -204,13 +204,13 @@ TASK 7: Applications
 |                                                                                              |
 | 4. In the **FQDN** field enter **app.acme.com**.                                             |
 |                                                                                              |
-| 5. In the **Subpath Pattern** field enter **/apps/app1* **.                                  |
+| 5. In the **Subpath Pattern** field enter **/apps/app1\***.                                  |
 |                                                                                              |
 | 6. On the **Subpath Pattern** row entered in Step 5, click the **+ (Plus Symbol)** twice     |
 |                                                                                              |
 |    to add to more rows.                                                                      |
 |                                                                                              |
-| 7. In the two new rows add **/apps/app2* ** and **/apps/app3* ** respectively.               |
+| 7. In the two new rows add **/apps/app2\*** and **/apps/app3\*** respectively.               |
 |                                                                                              |
 | 8. In the **Pool Configuration** section, under **Health Monitors** area move                |
 |                                                                                              |
