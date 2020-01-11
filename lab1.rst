@@ -229,7 +229,7 @@ TASK 7: Applications
 +----------------------------------------------------------------------------------------------+
 | 11. In the **Applications** dialogue window that follows, expand the **Subpaths** and ensure |
 |                                                                                              |
-|    app are present for the **agc-app.acme.com row.                                           |
+|    app are present for the **agc-app.acme.com** row.                                         |
 |                                                                                              |
 | 12. Click the **Save & Next** button at the bottom of the dialogue window.                   |
 +----------------------------------------------------------------------------------------------+
@@ -321,7 +321,7 @@ TASK 9: Contextual Access
 |                                                                                              |
 | 9. Check the **User Group Check** checkbox.                                                  |
 +----------------------------------------------------------------------------------------------+
-| |image021|                                                                                   |
+| |image022|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 TASK 6: Test the SAML SP
