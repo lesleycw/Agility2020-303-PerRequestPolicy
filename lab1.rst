@@ -286,63 +286,123 @@ Refer to the instructions and screen shots below:
 .. |image001| image:: media/lab1-001.PNG
    :width: 4.5in
    :height: 0.74in
-.. |image002| image:: media/image002.png
+.. |image002| image:: media/lab1-002.PNG
    :width: 4.5in
    :height: 3.37in
-.. |image003| image:: media/image003.png
+.. |image003| image:: media/lab1-003.PNG
    :width: 4.5in
    :height: 3.38in
-.. |image004| image:: media/image004.png
+.. |image004| image:: media/lab1-004.PNG
    :width: 4.5in
    :height: 0.73in
-.. |image005| image:: media/image005.png
+.. |image005| image:: media/lab1-005.PNG
    :width: 4.5in
    :height: 3.37in
-.. |image006| image:: media/image006.png
+.. |image006| image:: media/lab1-006.PNG
    :width: 4.5in
    :height: 1.15in
-.. |image007| image:: media/image007.png
+.. |image007| image:: media/lab1-007.PNG
    :width: 4.5in
    :height: 2.28in
-.. |image008| image:: media/image008.png
+.. |image008| image:: media/lab1-008.PNG
    :width: 4.5in
    :height: 0.96in
-.. |image009| image:: media/image009.png
+.. |image009| image:: media/lab1-009.PNG
    :width: 4.5in
    :height: 1.69in
-.. |image010| image:: media/image010.png
+.. |image010| image:: media/lab1-010.PNG
    :width: 4.5in
    :height: 2.94in
-.. |image011| image:: media/image011.png
+.. |image011| image:: media/lab1-011.PNG
    :width: 4.5in
    :height: 0.80in
-.. |image012| image:: media/image012.png
+.. |image012| image:: media/lab1-012.PNG
    :width: 4.5in
    :height: 1.12in
-.. |image013| image:: media/image013.png
+.. |image013| image:: media/lab1-013.PNG
    :width: 4.5in
    :height: 4.00in
-.. |image014| image:: media/image014.png
+.. |image014| image:: media/lab1-014.PNG
    :width: 4.5in
    :height: 1.48in
-.. |image015| image:: media/image015.png
+.. |image015| image:: media/lab1-015.PNG
    :width: 4.5in
    :height: 1.12in
-.. |image016| image:: media/image016.png
+.. |image016| image:: media/lab1-016.PNG
    :width: 4.5in
    :height: 1.54in
-.. |image017| image:: media/image017.png
+.. |image017| image:: media/lab1-017.png
    :width: 4.5in
    :height: 1.29in
-.. |image018| image:: media/image018.png
+.. |image018| image:: media/lab1-018.png
    :width: 4.5in
    :height: 5.46in
-.. |image019| image:: media/image019.png
+.. |image019| image:: media/lab1-019.png
    :width: 4.5in
    :height: 2.13in
-.. |image020| image:: media/image020.png
+.. |image020| image:: media/lab1-020.png
    :width: 4.5in
    :height: 1.01in
-.. |image021| image:: media/image021.png
+.. |image021| image:: media/lab1-021.png
+   :width: 4.5in
+   :height: 1.93in
+.. |image002| image:: media/lab1-022.PNG
+   :width: 4.5in
+   :height: 3.37in
+.. |image003| image:: media/lab1-023.PNG
+   :width: 4.5in
+   :height: 3.38in
+.. |image004| image:: media/lab1-024.PNG
+   :width: 4.5in
+   :height: 0.73in
+.. |image005| image:: media/lab1-025.PNG
+   :width: 4.5in
+   :height: 3.37in
+.. |image006| image:: media/lab1-026.PNG
+   :width: 4.5in
+   :height: 1.15in
+.. |image007| image:: media/lab1-027.PNG
+   :width: 4.5in
+   :height: 2.28in
+.. |image008| image:: media/lab1-028.PNG
+   :width: 4.5in
+   :height: 0.96in
+.. |image009| image:: media/lab1-029.PNG
+   :width: 4.5in
+   :height: 1.69in
+.. |image010| image:: media/lab1-030.PNG
+   :width: 4.5in
+   :height: 2.94in
+.. |image011| image:: media/lab1-031.PNG
+   :width: 4.5in
+   :height: 0.80in
+.. |image012| image:: media/lab1-032.PNG
+   :width: 4.5in
+   :height: 1.12in
+.. |image013| image:: media/lab1-033.PNG
+   :width: 4.5in
+   :height: 4.00in
+.. |image014| image:: media/lab1-034.PNG
+   :width: 4.5in
+   :height: 1.48in
+.. |image015| image:: media/lab1-035.PNG
+   :width: 4.5in
+   :height: 1.12in
+.. |image016| image:: media/lab1-036.PNG
+   :width: 4.5in
+   :height: 1.54in
+.. |image017| image:: media/lab1-037.png
+   :width: 4.5in
+   :height: 1.29in
+.. |image018| image:: media/lab1-038.png
+   :width: 4.5in
+   :height: 5.46in
+.. |image019| image:: media/lab1-039.png
+   :width: 4.5in
+   :height: 2.13in
+.. |image020| image:: media/lab1-040.png
+   :width: 4.5in
+   :height: 1.01in
+.. |image021| image:: media/lab1-041.png
    :width: 4.5in
    :height: 1.93in
