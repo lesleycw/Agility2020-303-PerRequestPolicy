@@ -27,11 +27,11 @@ Lab Requirements:
 Lab 1 Tasks:
 -----------------
 
-TASK 1: Intialize ACcess Guided Configuration 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TASK 1: Intialize Access Guided Configuration (AGC)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +----------------------------------------------------------------------------------------------+
-| 1. Login to your lab provided Virtual Edition **bigp1.f5lab.local**                          |
+| 1. Login to your provided lab Virtual Edition: **bigp1.f5lab.local**                         |
 |                                                                                              |
 | 2. Navigate to:  **Access -> Guided Configuration**                                          |
 |                                                                                              |
@@ -41,84 +41,44 @@ TASK 1: Intialize ACcess Guided Configuration
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 4. In the **Create New SAML SP Service**  dialogue box click **General Settings** in         |
+| 4. Click on the **Identity Aware Proxy**  dialogue box click under **Zero Trust**            |
 |                                                                                              |
-|    the left navigation pane and key in the following as shown:                               | 
-|                                                                                              |
-|    -  **Name**: **app.f5demo.com**                                                           | 
-|                                                                                              |
-|    -  **Entity ID**: **https://app.f5demo.com**                                              |
-|                                                                                              |
-|    *Note: The yellow box on Host will disappear when the Entity ID is entered.*              |
+|    in the navigation as shown.                                                               | 
 +----------------------------------------------------------------------------------------------+
 | |image002|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 5. Click on the **Security Settings** in the left navigation menu.                           |
+| 5. Review the **Identity Aware Proxy Application** configuration example presented.          |
 |                                                                                              |
-| 6. Check the **Sign Authentication Request** checkbox                                        |
+| 6. Scroll through and review the remaining element of the dialogue box to the bottom of the  |
 |                                                                                              |
-| 7. Select **/Common/SAML.key** from drop down menu for the                                   |
-|    **Message Signing Private Key**                                                           |
-|                                                                                              |
-| 8. Select **/Common/SAML.crt** from drop down menu for the                                   |
-|    **Message Signing Certificate**                                                           |
-|                                                                                              |
-| 9. Click **OK** on the dialogue box                                                          |
+|    screen and click "Next"                                                                   |
 +----------------------------------------------------------------------------------------------+
 | |image003|                                                                                   |
-+----------------------------------------------------------------------------------------------+
-
-TASK 2: Configure the External SAML IdP Connector 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Refer to the instructions and screen shots below:
-
-+----------------------------------------------------------------------------------------------+
-| 1. Click on the **Access** -> **Federation** -> **SAML Service Provider** ->                 |
-|                                                                                              |  
-|    **External IdP Connectors** or click on the **SAML Service Provider** tab in the          | 
-|                                                                                              |
-|    horizontal navigation menu andselect **External IdP Connectors**.                         |
-|                                                                                              |
-| 2. Click specifically on the **Down Arrow** next to the **Create** button (far right)        |
-|                                                                                              |
-| 3. Select **From Metadata** from the drop down menu                                          |
-+----------------------------------------------------------------------------------------------+
 | |image004|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
-+----------------------------------------------------------------------------------------------+   
-| 4. In the **Create New SAML IdP Connector** dialogue box, click **Browse** and select        |
+TASK 2: Name Congiguration and define Device Posture  
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
++----------------------------------------------------------------------------------------------+
+| 1. In the **Configuration Name** dialogie box, enter **agc-app.acme.com                      |
 |                                                                                              |
-|    the **idp.partner.com-app\_metadata.xml** file from the Desktop of your jump host.        |
-|                                                                                              |
-| 5. In the **Identity Provider Name** field enter the following: **idp.partner.com**          | 
-|                                                                                              |
-| 6. Click **OK** on the dialogue box.                                                         |
-|                                                                                              |
-| *Note: The idp.partner.com-app\_metadata.xml was created previously. Oftentimes, iDP*        |
-|                                                                                              |
-| *providers will have a metadata file representing their IdP service. This can be*            | 
-|                                                                                              |
-| *imported to save object creation time as it has been done in this lab*                      |
+| 2. Click **Save & Next" at the bottom of the dislogue window.                                |
 +----------------------------------------------------------------------------------------------+
 | |image005|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
-TASK: 3: Bind the External SAML IdP Connector to the SAML SP 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Refer to the instructions and screen shots below:
+TASK: 3: Configure Virtual Server Properties 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +----------------------------------------------------------------------------------------------+
-| 1. Click on the **Local SP Services** from the **SAML Service Provider** tab in the          |
+| 1. Select the **Create New** radio button under **Virtual Server**                           |
 |                                                                                              |
-|    horizontal navigation menu.                                                               |
+| 2. Select the **Host** radio button under **Destination Address**                            |
 |                                                                                              |
-| 2. Click the **Checkbox** next to the previously created **app.f5demo.com** and select       |
-|                                                                                              |
+| 3. Click the **Checkbox** next to the previously created **app.f5demo.com** and select       |                                                                                              |                                                                                              |
 |    **Bind/Unbind IdP Connectors** button at the bottom of the GUI.                           | 
 +----------------------------------------------------------------------------------------------+
 | |image006|                                                                                   |
