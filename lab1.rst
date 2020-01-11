@@ -196,9 +196,9 @@ TASK 7: Applications
 +----------------------------------------------------------------------------------------------+
   
 +----------------------------------------------------------------------------------------------+
-| 2. **Application Properties** dialogue window, click **Show Advanced Setting** in the upper  |
+| 2. In the **Application Properties** dialogue window, click **Show Advanced Setting** in the |
 |                                                                                              |
-|    right hand corner of the dialogue window.                                                 |
+|    upper right hand corner of the dialogue window.                                           |
 |                                                                                              |
 | 3. In the **Name** field enter **agc-app.acme.com**.                                         |
 |                                                                                              |
