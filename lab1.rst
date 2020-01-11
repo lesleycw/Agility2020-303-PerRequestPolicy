@@ -305,9 +305,9 @@ TASK 9: Contextual Access
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 8. In the **Contextual Access Properties > Trigger > New** window, chnage the **Name**       |
+| 8. In the **Contextual Access Properties > Trigger > New** dialogue window, change the       |
 |                                                                                              |
-|    field to **app1-rule**.                                                                   |
+|    **Name** field to **app1-rule**.                                                          |
 |                                                                                              |
 | 9. Check the **User Group Check** checkbox.                                                  |
 +----------------------------------------------------------------------------------------------+
@@ -315,14 +315,67 @@ TASK 9: Contextual Access
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 8. In the **Contextual Access Properties > Trigger > New** window, chnage the **Name**       |
+| 8. In the resulting **User Group Check** dialogue window, enter **app** in the filter box on |
 |                                                                                              |
-|    field to **app1-rule**.                                                                   |
+|    the left to filter the available AD Groups in the **Primary Authentication** section.     |
 |                                                                                              |
-| 9. Check the **User Group Check** checkbox.                                                  |
+| 9. Click the **Add** button in the row, where **app1** appears in the **Group Name** column. |
+|                                                                                              |
+| 10. Click the **Save** button at the bottom of the dialogue window.                          |
 +----------------------------------------------------------------------------------------------+
 | |image022|                                                                                   |
 +----------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------+
+| 11. Click the **Add** button in the **Contextuakl Access ** dialogue window.                 |
+|                                                                                              |
+| 12. Repeat steps 1 through 10 for **app2** and **app3** using the following values           |
+|                                                                                              |
+|     **App2**                                                                                 |
+|                                                                                              |
+|       Contextual Access Properties                                                           |
+|                                                                                              |
+|         - **Name**: **app2-access**                                                          |
+|                                                                                              |
+|         - **Resource Type**: **Application Group**                                           |
+|                                                                                              |
+|         - **Resource**: **app2**                                                             |
+|                                                                                              |
+|         - **Primary Authentication**: **agc-f5lab-AD**                                       |
+|                                                                                              |
+|         - **HTTP Header**: agc-app-header**                                                  |
+|                                                                                              |
+|       Contextual Access Trigger Rules**                                                      |
+|                                                                                              |
+|         - **Name**: **app2-rule**                                                            |
+|                                                                                              |
+|       User Group Check                                                                       |
+|                                                                                              |
+|        - Add AD group **app2**                                                               |
+|                                                                                              |
+|     **App3**                                                                                 |
+|                                                                                              |
+|       Contextual Access Properties                                                           |
+|                                                                                              |
+|         - **Name**: **app3-access**                                                          |
+|                                                                                              |
+|         - **Resource Type**: **Application Group**                                           |
+|                                                                                              |
+|         - **Resource**: **app3**                                                             |
+|                                                                                              |
+|         - **Primary Authentication**: **agc-f5lab-AD**                                       |
+|                                                                                              |
+|         - **HTTP Header**: agc-app-header**                                                  |
+|                                                                                              |
+|       Contextual Access Trigger Rules**                                                      |
+|                                                                                              |
+|         - **Name**: **app3-rule**                                                            |
+|                                                                                              |
+|       User Group Check                                                                       |
+|                                                                                              |
+|        - Add AD group **app3**                                                               |
++----------------------------------------------------------------------------------------------+
+
 
 TASK 6: Test the SAML SP
 ~~~~~~~~~~~~~~~~~~~~~~~~
