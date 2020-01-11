@@ -1,42 +1,41 @@
-Lab 1: SAML Service Provider (SP) Lab
-======================================
+Lab 1: Access Guided Configuration - PerRequest Policy
+======================================================
 
-The purpose of this lab is to configure and test a SAML Service
-Provider (SP). Students will configure the various aspects of a SAML Service
-Provider, import and bind to a SAML Identity Provider (IdP) and test
-SP-Initiated SAML Federation.
+The purpose of this lab is to leverage Access Guided Configuration (AGC) to 
+deploy an Identity Aware Proxy extended by Per Request Policies (PRP) access 
+controls. The Per Request Policies will restict access based on AD Group 
+Membership and the URI accessed. Students will configure the various aspects 
+of the application using strictly AGC, review the configuration and perform 
+tests of the deployment.
 
 Objective:
 ----------
 
--  Gain an understanding of SAML Service Provider(SP) configurations and
-   its component parts
+-  Gain an understanding of Access Guided Configruration configurations and
+   its various configurations and deployment models
 
--  Gain an understanding of the access flow for SP-Initiated SAML
+-  Gain an initial understanding of Per Request Policies and their applicability
+   in various delivery and control scenarios
 
 Lab Requirements:
 -----------------
 
 -  All Lab requirements will be noted in the tasks that follow
 
--  Estimated completion time: 25 minutes
+-  Estimated completion time: 30 minutes
 
 Lab 1 Tasks:
 -----------------
 
-TASK 1: Configure the SAML Service Provider (SP) 
+TASK 1: Intialize ACcess Guided Configuration 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Refer to the instructions and screen shots below:
-
 +----------------------------------------------------------------------------------------------+
-| 1. Login to your lab provided **Virtual Edition BIG-IP**                                     |
+| 1. Login to your lab provided Virtual Edition **bigp1.f5lab.local**                          |
 |                                                                                              |
-| 2. Begin by selecting: **Access -> Federation -> SAML Service Provider** ->                  |
+| 2. Navigate to:  **Access -> Guided Configuration**                                          |
 |                                                                                              |
-|    **Local SP Services**                                                                     |
-|                                                                                              |
-| 3. Click the **Create** button (far right)                                                   |
+| 3. Click the **Zero Trust** graphic as shown.                                                |
 +----------------------------------------------------------------------------------------------+
 | |image001|                                                                                   |
 +----------------------------------------------------------------------------------------------+
@@ -324,7 +323,7 @@ Refer to the instructions and screen shots below:
 | |image021|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
-.. |image001| image:: media/image001.png
+.. |image001| image:: media/lab-001.PNG
    :width: 4.5in
    :height: 0.74in
 .. |image002| image:: media/image002.png
