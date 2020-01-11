@@ -117,7 +117,7 @@ TASK: 4: Configure User Identity
 +----------------------------------------------------------------------------------------------+
 | 9. In the dialogue window that follows for **User Identity**, confirm **agc-f5lab-AD** is    |
 |                                                                                              |
-|    listed and then click **Save & Next** at the bottom if the dialogue window.               |
+|    listed, then click **Save & Next** at the bottom if the dialogue window.                  |
 +----------------------------------------------------------------------------------------------+
 | |image008|                                                                                   |
 +----------------------------------------------------------------------------------------------+
@@ -133,45 +133,66 @@ TASK 5: Multi Factor Authentication
 | |image009|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
+TASK 6: Single Sign-on & HTTP Header
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 +----------------------------------------------------------------------------------------------+
-| 3. In the **New Profile** window, key in the following as shown:                             |
+| 1. Check **Enable Single Sign-on (Optional)** checkbox in the                                |
 |                                                                                              |
-|    -  **Name**: **app.f5demo.com-policy**                                                    |
-|                                                                                              |
-|    -  **Profile Type**: **All** (from drop down)                                             |
-|                                                                                              |
-|    -  **Profile Scope**: **Profile** (default)                                               |
-|                                                                                              |
-| 4. Scroll to the bottom of the **New Profile** window to the **Language Settings**           |
-|                                                                                              |
-| 5. Select **English** from the **Factory Built-in Languages** menu on the right and click    |
-|                                                                                              |
-|    the **Double Arrow (<<)**, then click the **Finished** button.                            |
+|    **Single Sign-on & HTTP Header** dialogue window.                                         |
 +----------------------------------------------------------------------------------------------+
 | |image010|                                                                                   |
 +----------------------------------------------------------------------------------------------+
  
 +----------------------------------------------------------------------------------------------+
-| 6. From the **Access** -> **Profiles/Policies** -> **Access Profiles**                       |
-|    **(Per-Session Policies)**,                                                               |
+| 2. Enter **agc-app-header** in the **Name** field in the **Single Sign-on & HTTP Header**    |
 |                                                                                              |
-|    click the **Edit** link on the previously created **app.f5demo.com-policy** line.         |
+|    **Properties** dialogue window.                                                           |
+|                                                                                              |
+| 3. Select the **HTTP Headers** radio button under **Type**                                   |
+|                                                                                              |
+| 4. Click the **+ (Plus Symbol)** in the **Action** column of the **SSO Headers** section.    |
+|                                                                                              |
+| 5. In the new **SSO Headers** row, enter the following values:                               |
+|                                                                                              |
+|    - **Header Operation**: **replace**                                                       |
+|                                                                                              |
+|    - **Header Name**: **agc-app-uid**                                                        |
+|                                                                                              |
+|    - **Header Value**: **%{subsession.logon.last.username}**                                 |
+|                                                                                              |
+| 6. Repeat steps 4 & 5 with the following values:                                             |
+|                                                                                              |
+|    - **Header Operation**: **replace**                                                       |
+|                                                                                              |
+|    - **Header Name**: **agc-app-uid**                                                        |
+|                                                                                              |
+|    - **Header Value**: **%{subsession.logon.last.username}**                                 |
+|                                                                                              |
+| 7. At the bottom of the screen, click **Save**                                               |
 +----------------------------------------------------------------------------------------------+
 | |image011|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 7. In the **Visual Policy Editor** window for the **/Common/app.f5demo.com-policy**, click   |
+| 8. In the dialogue window that follows for **Single Sign-on & HTTP Header**, confirm         |
 |                                                                                              |
-|    the **Plus (+) Sign** between **Start** and **Deny**.                                     |
+|    **agc-app-header** is listed, then click **Save & Next** at the bottom if the             |
 |                                                                                              |
-| 8. In the pop-up dialogue box select the **Authentication** tab and then click the **Radio** |
-|                                                                                              | 
-|    **Button** next to **SAML Auth**. Once selected click the **Add Item** button.            |
+|     dialogue window.                                                                         |
 +----------------------------------------------------------------------------------------------+
 | |image012|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
+TASK 7: Application Properties
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
++----------------------------------------------------------------------------------------------+
+| 1. Check **Enable Single Sign-on (Optional)** checkbox in the                                |
 |                                                                                              |
-| |image013|                                                                                   |
+|    **Single Sign-on & HTTP Header** dialogue window.                                         |
++----------------------------------------------------------------------------------------------+
+| |image010|                                                                                   |
 +----------------------------------------------------------------------------------------------+
   
 +----------------------------------------------------------------------------------------------+
