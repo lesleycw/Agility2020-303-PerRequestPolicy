@@ -59,7 +59,7 @@ TASK 1: Intialize Access Guided Configuration (AGC)
 | |image004|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
-TASK 2: Name Congiguration and define Device Posture  
+TASK 2: Name Configuration and define Device Posture  
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +----------------------------------------------------------------------------------------------+
