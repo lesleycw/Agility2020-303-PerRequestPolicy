@@ -78,13 +78,16 @@ TASK: 3: Configure Virtual Server Properties
 |                                                                                              |
 | 2. Select the **Host** radio button under **Destination Address**                            |
 |                                                                                              |
-| 3. Enter the IP Address **10.1.10.100** in the dialogue box for **Destination Address**.     |                                                                                              |                                                                                              |
-| 4. Confirm the **Rediect Port** is **80** and **HTTP**.                                      |                                                                                              |                                                                                              |
+| 3. Enter the IP Address **10.1.10.100** in the dialogue box for **Destination Address**.     |
+|                                                                                              |
+| 4. Confirm the **Rediect Port** is **80** and **HTTP**.                                      |                                                                                             
+|                                                                                              |
 | 5. Select the **Use Existing** radio button under **Client SSL Profile**                     |
 |                                                                                              |
 | 6. Move the **f5demo** Client SSL Profile to the left, **Selected**                          |
 |                                                                                              |
-| 7. Click **Save & Next** at the bottom of the dialogue window.                               | +----------------------------------------------------------------------------------------------+
+| 7. Click **Save & Next** at the bottom of the dialogue window.                               |
++----------------------------------------------------------------------------------------------+
 | |image006|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
