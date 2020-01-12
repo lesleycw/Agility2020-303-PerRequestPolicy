@@ -386,7 +386,7 @@ TASK 9: Contextual Access
 | |image024|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
-TASK 6: Test the SAML SP
+TASK 9: Test the SAML SP
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 Refer to the instructions and screen shots below:
