@@ -458,9 +458,125 @@ TASK 12: Summary
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 2. Click the **Finish** button in the final dialogue window.                                 |
+| 2. Click the **Finish** button in the final dialogue window. Access Guided Configuration     | 
+|                                                                                              | 
+|    will return to the start screen and **agc-app.acme.com** will be "DEPLOYED"               |
 +----------------------------------------------------------------------------------------------+
 | |image032|                                                                                   |
+|                                                                                              |
+| |image033|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
+TASK 13: Testing
+~~~~~~~~~~~~~~~~
+
++----------------------------------------------------------------------------------------------+
+| 1. Begin a RDP session with the **Jumphost (10.1.10.10)** through the Student Portal.        |
+|                                                                                              |
+| 2. Open Firefox from the desktop and navigate to **https://agc-app.acme.com**.  A bookmark   |
+|                                                                                              |
+|    link has been provided in the toolbar.                                                    |
+|                                                                                              |
+| 3. Logon to the resulting logon page with **UserID: user1** and **Password: user1**          |
++----------------------------------------------------------------------------------------------+
+| |image034|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------+
+| 4. Click on the **Application 1** button in the **ACME Application/Service Portal**.         |
+|                                                                                              |
+| 5. A new tab will open displaying received headers demonstrating the user has accces to the  |
+|                                                                                              |
+|    application.                                                                              |
++----------------------------------------------------------------------------------------------+
+| |image035|                                                                                   |
+|                                                                                              |
+| |image036|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------+
+| 6. Return to the **ACME Application/Service Portal** and click **Application 2**.            |
+|                                                                                              |
+| 7. A new tab will open displaying a **Block Page** (customizable), restricting access to the |
+|                                                                                              |
+|    application based on AD group membership.                                                 |
++----------------------------------------------------------------------------------------------+
+| |image037|                                                                                   |
+|                                                                                              |
+| |image038|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------+
+| 8. Return to the **ACME Application/Service Portal** and click the **Logout** button and     |
+|                                                                                              |
+|    and close the browser.                                                                    |
+|                                                                                              |
+| 9. Run the **Add-User1-to-Group2** Powesrshell script link provided on the **Jumphost**      |
+|                                                                                              |
+|    desktop. The script will run and automatically close.                                     |
++----------------------------------------------------------------------------------------------+
+| |image039|                                                                                   |
+|                                                                                              |
+| |image040|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------+
+| 10. Reopen Firefox using the desktop link on the **Jumphost** and launch the                 |
+|                                                                                              |
+|     **agc-app.acme.com** application from the link provided in the broswer.                  |
+|                                                                                              |
+| 11. Click on the **Application 2** button in the **ACME Application/Service Portal**.        |
+|                                                                                              |
+| 12. A new tab will open displaying received headers demonstrating the user has accces to the |
+|                                                                                              |
+|     application becasue of the change in the user's Group Membership.                        |
++----------------------------------------------------------------------------------------------+
+| |image041|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
+TASK 14: Review
+~~~~~~~~~~~~~~~
+
++----------------------------------------------------------------------------------------------+
+| 1. Reopen Firefox using the desktop link on the **Jumphost** and launch the                  |
+|                                                                                              |
+|     **agc-app.acme.com** application from the link provided in the broswer.                  |
+|                                                                                              |
+| 2. Click on the **Application 2** button in the **ACME Application/Service Portal**.         |
+|                                                                                              |
+| 3. A new tab will open displaying received headers demonstrating the user has accces to the  |
+|                                                                                              |
+|     application becasue of the change in the user's Group Membership.                        |
++----------------------------------------------------------------------------------------------+
+| |image042|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------+
+| 4. Reopen Firefox using the desktop link on the **Jumphost** and launch the                  |
+|                                                                                              |
+|     **agc-app.acme.com** application from the link provided in the broswer.                  |
+|                                                                                              |
+| 5. Click on the **Application 2** button in the **ACME Application/Service Portal**.         |
+|                                                                                              |
+| 6. A new tab will open displaying received headers demonstrating the user has accces to the  |
+|                                                                                              |
+|     application becasue of the change in the user's Group Membership.                        |
++----------------------------------------------------------------------------------------------+
+| |image043|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------+
+| 7. Reopen Firefox using the desktop link on the **Jumphost** and launch the                  |
+|                                                                                              |
+|     **agc-app.acme.com** application from the link provided in the broswer.                  |
+|                                                                                              |
+| 8. Click on the **Application 2** button in the **ACME Application/Service Portal**.         |
+|                                                                                              |
+| 9. A new tab will open displaying received headers demonstrating the user has accces to the  |
+|                                                                                              |
+|     application becasue of the change in the user's Group Membership.                        |
++----------------------------------------------------------------------------------------------+
+| |image044|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 .. |image001| image:: media/lab1-001.png
