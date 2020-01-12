@@ -719,4 +719,7 @@ TASK 15: End of Lab1
 .. |image045| image:: media/lab1-045.png
    :width: 4.5in
    :height: 1.93in
-   
+.. |image045| image:: media/image001.png
+   :width: 4.5in
+   :height: 1.93in
+      
