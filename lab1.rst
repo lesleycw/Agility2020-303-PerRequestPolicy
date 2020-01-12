@@ -581,7 +581,7 @@ TASK 15: End of Lab1
 +----------------------------------------------------------------------------------------------+
 | 1. This concludes Lab1, feel free to review and test the configuration.                      |
 +----------------------------------------------------------------------------------------------+
-| |image045|                                                                                   |
+| |image046|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 .. |image001| image:: media/lab1-001.png
@@ -719,7 +719,7 @@ TASK 15: End of Lab1
 .. |image045| image:: media/lab1-045.png
    :width: 4.5in
    :height: 1.93in
-.. |image045| image:: media/image001.png
+.. |image046| image:: media/image001.png
    :width: 4.5in
    :height: 1.93in
       
