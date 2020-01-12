@@ -389,7 +389,7 @@ TASK 9: Contextual Access
 +----------------------------------------------------------------------------------------------+
 | 14. In the **Contextual Access Properties** dialigue window, enter **base-access** in the    |
 |                                                                                              |
-|    **Name** field.                                                                           |   
+|     **Name** field.                                                                          |   
 |                                                                                              |
 | 15. Select **Application Group** from the **Resource Type** drop down.                       |   
 |                                                                                              |
@@ -403,7 +403,7 @@ TASK 9: Contextual Access
 |                                                                                              |
 | 20. In the **Trigger Rules** section that appears, change the **Match Action** for the       |
 |                                                                                              |
-|    **Default Fallback** from **Reject** to **Allow**.                                        |
+|     **Default Fallback** from **Reject** to **Allow**.                                       |
 |                                                                                              |
 | 21. Click the **Save** button at the bottom of the dialogue window.                          |
 +----------------------------------------------------------------------------------------------+
@@ -412,39 +412,38 @@ TASK 9: Contextual Access
 | |image026|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
-TASK 9: Test the SAML SP
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-Refer to the instructions and screen shots below:
-
 +----------------------------------------------------------------------------------------------+
-| 1. Using your browser from the Jump Host click on the provided bookmark or navigate to       |
+| 22. Review the resulting **Contextual Access** dialogue window for completion of all         |
 |                                                                                              |
-|    https://app.f5demo.com . The SAML SP that you have just configured.                       |
+|     created access rules.                                                                    |
+|                                                                                              |
+| 23. Click the **Save & Next** button at the bottom of the dialogue window.                   |
 +----------------------------------------------------------------------------------------------+
-| |image020|                                                                                   |
+| |image027|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
+TASK 10: Customization
+~~~~~~~~~~~~~~~~~~~~~~
+
 +----------------------------------------------------------------------------------------------+
-| 2. Did you successfully redirect to the IdP?                                                 |
+| 1. Scroll the bottom of the **Customization Properties** dialogue window, leaving all        |
 |                                                                                              |
-| 3. Login to the iDP, were you successfully authenticated? (use credentials provided in the   |
-|                                                                                              |
-|    Authentication Information section at the beginning of this guide)                        |
-|                                                                                              |
-|    -  **Username**: **user**                                                                 |
-|                                                                                              |
-|    -  **Password**: **Agility1**                                                             |
-|                                                                                              |
-| 4. After successful authentication, were you returned to the SAML SP?                        |
-|                                                                                              |
-| 5. Were you successfully authenticated (SAML)?                                               |
-|                                                                                              |
-| 6. Review your **Active Sessions** (**Access Overview** -> **Active Sessions**)              |
-|                                                                                              |
-| 7. Review your Access Report Logs (**Access** -> **Overview Access Reports**)                |
+|    defaults and then click **Save & Next**.                                                  |
 +----------------------------------------------------------------------------------------------+
-| |image021|                                                                                   |
+| |image028|                                                                                   |
+|                                                                                              |
+| |image029|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
+TASK 11: Logon Protection
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
++----------------------------------------------------------------------------------------------+
+| 1. Click the **Save & Next** button at the bottom of the **Logon Protection Properties**     |
+|                                                                                              |
+|    dialogue window.                                                                          |
++----------------------------------------------------------------------------------------------+
+| |image030|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 .. |image001| image:: media/lab1-001.png
