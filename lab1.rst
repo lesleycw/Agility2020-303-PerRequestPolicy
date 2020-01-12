@@ -333,25 +333,25 @@ TASK 9: Contextual Access
 |                                                                                              |
 |     **App2**                                                                                 |
 |                                                                                              |
-|       Contextual Access Properties                                                           |
+|     - Contextual Access Properties                                                           |
 |                                                                                              |
-|         - **Name**: **app2-access**                                                          |
+|     -- **Name**: **app2-access**                                                             |
 |                                                                                              |
-|         - **Resource Type**: **Application Group**                                           |
+|     -- **Resource Type**: **Application Group**                                              |
 |                                                                                              |
-|         - **Resource**: **app2**                                                             |
+|     -- **Resource**: **app2**                                                                |
 |                                                                                              |
-|         - **Primary Authentication**: **agc-f5lab-AD**                                       |
+|     -- **Primary Authentication**: **agc-f5lab-AD**                                          |
 |                                                                                              |
-|         - **HTTP Header**: **agc-app-header**                                                |
+|     -- **HTTP Header**: **agc-app-header**                                                   |
 |                                                                                              |
-|       Contextual Access Trigger Rules**                                                      |
+|     - Contextual Access Trigger Rules                                                        |
 |                                                                                              |
-|         - **Name**: **app2-rule**                                                            |
+|     -- **Name**: **app2-rule**                                                               |
 |                                                                                              |
-|       User Group Check                                                                       |
+|     - User Group Check                                                                       |
 |                                                                                              |
-|        - Add AD group **app2**                                                               |
+|     -- Add AD group **app2**                                                                 |
 |                                                                                              |
 |     **App3**                                                                                 |
 |                                                                                              |
