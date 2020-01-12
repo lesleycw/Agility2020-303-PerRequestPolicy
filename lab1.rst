@@ -327,7 +327,7 @@ TASK 9: Contextual Access
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 11. Click the **Add** button in the **Contextuakl Access ** dialogue window.                 |
+| 11. Click the **Add** button in the **Contextual Access** dialogue window.                   |
 |                                                                                              |
 | 12. Repeat steps 1 through 10 for **app2** and **app3** using the following values           |
 |                                                                                              |
@@ -375,7 +375,8 @@ TASK 9: Contextual Access
 |                                                                                              |
 |     - Add AD group **app3**                                                                  |
 +----------------------------------------------------------------------------------------------+
-
+| |image023|                                                                                   |
++----------------------------------------------------------------------------------------------+
 
 TASK 6: Test the SAML SP
 ~~~~~~~~~~~~~~~~~~~~~~~~
