@@ -343,7 +343,7 @@ TASK 9: Contextual Access
 |                                                                                              |
 |         - **Primary Authentication**: **agc-f5lab-AD**                                       |
 |                                                                                              |
-|         - **HTTP Header**: agc-app-header**                                                  |
+|         - **HTTP Header**: **agc-app-header**                                                  |
 |                                                                                              |
 |       Contextual Access Trigger Rules**                                                      |
 |                                                                                              |
