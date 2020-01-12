@@ -335,9 +335,9 @@ TASK 9: Contextual Access
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 11. Click the **Add** button in the **Contextual Access** dialogue window.                   |
+| 12. Click the **Add** button in the **Contextual Access** dialogue window.                   |
 |                                                                                              |
-| 12. Repeat steps 1 through 10 for **app2** and **app3** using the following values           |
+| 13. Repeat steps 1 through 10 for **app2** and **app3** using the following values           |
 |                                                                                              |
 |     **App2**                                                                                 |
 |                                                                                              |
@@ -384,6 +384,32 @@ TASK 9: Contextual Access
 |     - Add AD group **app3**                                                                  |
 +----------------------------------------------------------------------------------------------+
 | |image024|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------+
+| 14. In the **Contextual Access Properties** dialigue window, enter **base-access** in the    |
+|                                                                                              |
+|    **Name** field.                                                                           |   
+|                                                                                              |
+| 15. Select **Application Group** from the **Resource Type** drop down.                       |   
+|                                                                                              |
+| 16. Select **app1** from the **Resource** drop down.                                         |  
+|                                                                                              |
+| 17. Select **agc-f5lab-AD** from the **Primary Authentication** drop down.                   |  
+|                                                                                              |
+| 18. Select **agc-app-header** from the **HTTP Header** drop down.                            |  
+|                                                                                              |
+| 19. Check the **Enable Addtional Checks** checkbox.                                          |  
+|                                                                                              |
+| 20. In the **Trigger Rules** section that appears, change the **Match Action** for the       |
+|                                                                                              |
+|    **Default Fallback** from **Reject** to **Allow**.                                        |
+|                                                                                              |
+| 21. Click the **Save** button at the bottom of the dialogue window.                          |
++----------------------------------------------------------------------------------------------+
+| |image025|                                                                                   |
+|                                                                                              |
+| |image026|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 TASK 9: Test the SAML SP
