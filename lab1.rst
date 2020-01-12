@@ -702,12 +702,12 @@ TASK 14: Review
 .. |image041| image:: media/lab1-041.png
    :width: 4.5in
    :height: 1.93in
-.. |image041| image:: media/lab1-042.png
+.. |image042| image:: media/lab1-042.png
    :width: 4.5in
    :height: 1.93in
-.. |image041| image:: media/lab1-043.png
+.. |image043| image:: media/lab1-043.png
    :width: 4.5in
    :height: 1.93in
-.. |image041| image:: media/lab1-044.png
+.. |image044| image:: media/lab1-044.png
    :width: 4.5in
    :height: 1.93in
