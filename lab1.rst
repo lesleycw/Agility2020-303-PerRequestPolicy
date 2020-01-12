@@ -538,43 +538,37 @@ TASK 14: Review
 ~~~~~~~~~~~~~~~
 
 +----------------------------------------------------------------------------------------------+
-| 1. Reopen Firefox using the desktop link on the **Jumphost** and launch the                  |
+| 1. Login to your provided lab Virtual Edition: **bigp1.f5lab.local**                         |
 |                                                                                              |
-|     **agc-app.acme.com** application from the link provided in the broswer.                  |
+| 2. Navigate to:  **Access -> Overview -> Active Sessions**                                   |
 |                                                                                              |
-| 2. Click on the **Application 2** button in the **ACME Application/Service Portal**.         |
+| 3. Here you can see the active session and any subsessions created by virtue of the Per      |
 |                                                                                              |
-| 3. A new tab will open displaying received headers demonstrating the user has accces to the  |
+|    Request Policies and view their associated varibles.                                      |
 |                                                                                              |
-|     application becasue of the change in the user's Group Membership.                        |
+| 4. Click on the **View** asscoiated with the active session's subsession.                    |
 +----------------------------------------------------------------------------------------------+
-| |image042|                                                                                   |
+| |image001|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 4. Reopen Firefox using the desktop link on the **Jumphost** and launch the                  |
+| 5. In the resulting variable view, review the subsession variables created as a result of    |
 |                                                                                              |
-|     **agc-app.acme.com** application from the link provided in the broswer.                  |
-|                                                                                              |
-| 5. Click on the **Application 2** button in the **ACME Application/Service Portal**.         |
-|                                                                                              |
-| 6. A new tab will open displaying received headers demonstrating the user has accces to the  |
-|                                                                                              |
-|     application becasue of the change in the user's Group Membership.                        |
+|    access requests performed in testing.                                                     |
 +----------------------------------------------------------------------------------------------+
 | |image043|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 7. Reopen Firefox using the desktop link on the **Jumphost** and launch the                  |
+| 6. Navigate to: **Access -> Overview -> Active Sessions** in the left-hand navigation menu.  |
 |                                                                                              |
-|     **agc-app.acme.com** application from the link provided in the broswer.                  |
+|    **agc-app.acme.com** application from the link provided in the broswer.                   |
 |                                                                                              |
 | 8. Click on the **Application 2** button in the **ACME Application/Service Portal**.         |
 |                                                                                              |
 | 9. A new tab will open displaying received headers demonstrating the user has accces to the  |
 |                                                                                              |
-|     application becasue of the change in the user's Group Membership.                        |
+|    application becasue of the change in the user's Group Membership.                         |
 +----------------------------------------------------------------------------------------------+
 | |image044|                                                                                   |
 +----------------------------------------------------------------------------------------------+
