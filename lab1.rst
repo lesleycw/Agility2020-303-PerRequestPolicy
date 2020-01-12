@@ -560,17 +560,19 @@ TASK 14: Review
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 6. Navigate to: **Access -> Overview -> Active Sessions** in the left-hand navigation menu.  |
+| 6. Navigate to: **Access -> Profiles/Policies -> Per-Request Policies** in the left-hand     |
 |                                                                                              |
-|    **agc-app.acme.com** application from the link provided in the broswer.                   |
+|    navigation menu.                                                                          |
 |                                                                                              |
-| 8. Click on the **Application 2** button in the **ACME Application/Service Portal**.         |
+| 7. In the resulting dialogue window, click on the **Edit** link in the                       |
 |                                                                                              |
-| 9. A new tab will open displaying received headers demonstrating the user has accces to the  |
+|    **agc-app.acme.com_perRequestPolicy** row.                                                |
 |                                                                                              |
-|    application becasue of the change in the user's Group Membership.                         |
+| 8. Review the created Per Request Policy                                                     |
 +----------------------------------------------------------------------------------------------+
 | |image044|                                                                                   |
+|                                                                                              |
+| |image045|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 TASK 15: End of Lab1
@@ -578,6 +580,8 @@ TASK 15: End of Lab1
 
 +----------------------------------------------------------------------------------------------+
 | 1. This concludes Lab1, feel free to review and test the configuration.                      |
++----------------------------------------------------------------------------------------------+
+| |image045|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 .. |image001| image:: media/lab1-001.png
@@ -712,3 +716,7 @@ TASK 15: End of Lab1
 .. |image044| image:: media/lab1-044.png
    :width: 4.5in
    :height: 1.93in
+.. |image045| image:: media/lab1-045.png
+   :width: 4.5in
+   :height: 1.93in
+   
