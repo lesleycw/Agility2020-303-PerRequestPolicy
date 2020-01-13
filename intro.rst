@@ -4,22 +4,30 @@ Getting Started
 Please follow the instructions provided by the instructor to start your
 lab and access your jump host.
 
-To access your dedicated student lab environment, you will require a web browser and Remote Desktop Protocol (RDP) client software. The web browser will be used to access the Lab Training Portal. The RDP client will be used to connect to the Jump Host, where you will be able to access the BIG-IP management interfaces (HTTPS, SSH).
+To access your dedicated student lab environment, you will require a web browser
+and Remote Desktop Protocol (RDP) client software. The web browser will be used to
+access the Lab Training Portal. The RDP client will be used to connect to the Jump
+Host, where you will be able to access the BIG-IP management interfaces (HTTPS, SSH).
 
-1. Establish an RDP connection to your Jump Host and login with the following credentials:
-- User: **user1**
-- Password: **user1**
-
-2. Access the BIG-IP GUI https://10.1.1.4 (you can double-click on the BIG-IP1 bookmark from Chrome).
-
-3. Login into the BIG-IP Configuration Utility with the following credentials:
-- User: **admin**
-- Password: **admin**
-
-.. NOTE::
-	 All work for this lab will be performed exclusively from the Windows
-	 jumphost. No installation or interaction with your local system is
-	 required.
++----------------------------------------------------------------------------------------------+
+| 1. Establish a RDP connection to your provided lab Virtual Edition: **jumphost.f5lab.local** |
+|                                                                                              |
+|    with the following credentials:                                                           |
+|                                                                                              |
+|    - **UserID: user1** / **Password: user1**                                                 |
+|                                                                                              |
+| 2. Access the BIG-IP GUI https://10.1.1.4 (you can double-click on the **bigip1** bookmark   |
+|                                                                                              |
+|     from within Chrome).                                                                     |
+|                                                                                              |
+| 3. Login into the BIG-IP Configuration Utility with the following credentials:               |
+|                                                                                              |
+|    - **UserID: admin** / **Password: admin**                                                 |
+|                                                                                              |
+| Note: All work for this lab will be performed exclusively from your provided lab environment |
+|                                                                                              |
+|       No installation or interaction with your local system is required.                     |
++----------------------------------------------------------------------------------------------+
 
 Lab Topology
 ~~~~~~~~~~~~
