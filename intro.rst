@@ -16,14 +16,15 @@ Host, where you will be able to access the BIG-IP management interfaces (HTTPS, 
 |                                                                                              |
 |    - **UserID: user1** / **Password: user1**                                                 |
 |                                                                                              |
-| 2. Access the BIG-IP GUI https://10.1.1.4 (you can double-click on the **bigip1** bookmark   |
+| 2. Access the BIG-IP GUI via https://10.1.1.4  You can also double-click on the **bigip1**   |
 |                                                                                              |
-|     from within Chrome).                                                                     |
+|    bookmark from within Chrome.                                                              |
 |                                                                                              |
 | 3. Login into the BIG-IP Configuration Utility with the following credentials:               |
 |                                                                                              |
 |    - **UserID: admin** / **Password: admin**                                                 |
 |                                                                                              |
++----------------------------------------------------------------------------------------------+
 | Note: All work for this lab will be performed exclusively from your provided lab environment |
 |                                                                                              |
 |       No installation or interaction with your local system is required.                     |
