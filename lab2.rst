@@ -1,28 +1,31 @@
-Lab 2: IDaaS SAML Identity Provider (iDP) Lab (OKTA)
-====================================================
+Lab 1: Access Guided Configuration - PerRequest Policy
+======================================================
 
-The purpose of this lab is to configure and test a IDaaS SAML Identity
-Provider. Students will configure a IDaaS based SAML Identity Provider
-(in this case OKTA) and import and bind to a SAML Service Provider and
-test IdP-Initiated and SP-Initiated SAML Federation.
+The purpose of this lab is to build a custom Per Request Policy flow (PRP) and
+then extend that policy with additional subroutines to perform dynamic updates 
+to access controls and authentication requirements. The Per Request Policies will restict access based on AD Group 
+Membership and the URI accessed. Students will configure the various aspects 
+of the application using strictly AGC, review the configuration and perform 
+tests of the deployment.
 
 Objective:
 ----------
 
--  Gain an understanding of integrating a IDaaS SAML Identity
-   Provider(IdP)
+-  Gain an understanding of Access Guided Configruration configurations and
+   its various configurations and deployment models
 
--  Gain an understanding of the access flow for IdP-Initiated SAML
+-  Gain an initial understanding of Per Request Policies and their applicability
+   in various delivery and control scenarios
 
 Lab Requirements:
 -----------------
 
 -  All Lab requirements will be noted in the tasks that follow
 
--  Estimated completion time: 25 minutes
+-  Estimated completion time: 30 minutes
 
 Lab 2 Tasks:
-------------
+-----------------
 
 TASK 1: Sign Up for OKTA Developer Account 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
