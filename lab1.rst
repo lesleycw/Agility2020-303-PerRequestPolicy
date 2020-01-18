@@ -81,7 +81,7 @@ TASK: 3: Configure Virtual Server Properties
 |                                                                                              |
 | 3. Enter the IP Address **10.1.10.100** in the dialogue box for **Destination Address**.     |
 |                                                                                              |
-| 4. Confirm the **Rediect Port** is **80** and **HTTP**.                                      |                                                                                             
+| 4. Confirm the **Rediect Port** is **80** and **HTTP**.                                      |
 |                                                                                              |
 | 5. Select the **Use Existing** radio button under **Client SSL Profile**                     |
 |                                                                                              |
@@ -287,17 +287,17 @@ TASK 9: Contextual Access
 +----------------------------------------------------------------------------------------------+
 | 1. In the **Contextual Access Properties** dialigue window, enter **app1-access** in the     |
 |                                                                                              |
-|    **Name** field.                                                                           |   
+|    **Name** field.                                                                           |
 |                                                                                              |
-| 2. Select **Application Group** from the **Resource Type** drop down.                        |   
+| 2. Select **Application Group** from the **Resource Type** drop down.                        |
 |                                                                                              |
-| 3. Select **app1** from the **Resource** drop down.                                          |  
+| 3. Select **app1** from the **Resource** drop down.                                          |
 |                                                                                              |
-| 4. Select **agc-f5lab-AD** from the **Primary Authentication** drop down.                    |  
+| 4. Select **agc-f5lab-AD** from the **Primary Authentication** drop down.                    |
 |                                                                                              |
-| 5. Select **agc-app-header** from the **HTTP Header** drop down.                             |  
+| 5. Select **agc-app-header** from the **HTTP Header** drop down.                             |
 |                                                                                              |
-| 6. Check the **Enable Addtional Checks** checkbox.                                           |  
+| 6. Check the **Enable Addtional Checks** checkbox.                                           |
 |                                                                                              |
 | 7. In the **Trigger Rules** section that appears, click the **Add** button                   |
 +----------------------------------------------------------------------------------------------+
@@ -389,17 +389,17 @@ TASK 9: Contextual Access
 +----------------------------------------------------------------------------------------------+
 | 14. In the **Contextual Access Properties** dialigue window, enter **base-access** in the    |
 |                                                                                              |
-|     **Name** field.                                                                          |   
+|     **Name** field.                                                                          |
 |                                                                                              |
-| 15. Select **Application Group** from the **Resource Type** drop down.                       |   
+| 15. Select **Application Group** from the **Resource Type** drop down.                       |
 |                                                                                              |
-| 16. Select **app1** from the **Resource** drop down.                                         |  
+| 16. Select **app1** from the **Resource** drop down.                                         |
 |                                                                                              |
-| 17. Select **agc-f5lab-AD** from the **Primary Authentication** drop down.                   |  
+| 17. Select **agc-f5lab-AD** from the **Primary Authentication** drop down.                   |
 |                                                                                              |
-| 18. Select **agc-app-header** from the **HTTP Header** drop down.                            |  
+| 18. Select **agc-app-header** from the **HTTP Header** drop down.                            |
 |                                                                                              |
-| 19. Check the **Enable Addtional Checks** checkbox.                                          |  
+| 19. Check the **Enable Addtional Checks** checkbox.                                          |
 |                                                                                              |
 | 20. In the **Trigger Rules** section that appears, change the **Match Action** for the       |
 |                                                                                              |
@@ -458,8 +458,8 @@ TASK 12: Summary
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 2. Click the **Finish** button in the final dialogue window. Access Guided Configuration     | 
-|                                                                                              | 
+| 2. Click the **Finish** button in the final dialogue window. Access Guided Configuration     |
+|                                                                                              |
 |    will return to the start screen and **agc-app.acme.com** will be "DEPLOYED"               |
 +----------------------------------------------------------------------------------------------+
 | |image032|                                                                                   |

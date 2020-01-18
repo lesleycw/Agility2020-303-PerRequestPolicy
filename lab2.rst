@@ -2,11 +2,11 @@ Lab 2: Custom Per Request Policy
 ================================
 
 The purpose of this lab is to build a custom Per Request Policy flow (PRP) and
-then extend that policy with additional subroutines to perform dynamic updates 
-to access controls and authentication requirements. Per Request Policies will 
+then extend that policy with additional subroutines to perform dynamic updates
+to access controls and authentication requirements. Per Request Policies will
 restict or grant access based on dynamic queries AD Group Membership and the
 URI accessed. Step-up authneitcation will also be leveraged.
-Students will configure the various aspects using the Visual Policy Editor, 
+Students will configure the various aspects using the Visual Policy Editor,
 review the configuration and perform tests of the deployment.
 
 Objective:
@@ -14,8 +14,8 @@ Objective:
 
 -  Gain a deeper understanding of Per Request Policies and their applicability
    in various delivery and control scenarios
-   
--  Gain a further understanding of Per Request Policy Subroutines and their 
+ 
+-  Gain a further understanding of Per Request Policy Subroutines and their
    use in dynamic queries, step authentication and HTTP connector queries.
 
 Lab Requirements:
@@ -120,7 +120,7 @@ TASK 3: URI Dynamic Filtering (via AD Group Membership)
 +----------------------------------------------------------------------------------------------+
 | 1. Navigate to **Access -> Profiles/Policies -> Per-Request Policies and then click the      |
 |                                                                                              |
-|    **Edit** link for the **app.acme.com_prp** Per Request Policy.                            |    
+|    **Edit** link for the **app.acme.com_prp** Per Request Policy.                            |
 |                                                                                              |
 | 2. In the resulting Visual Policy Editor window, click on the **+ (Plus Symbol)** on the     |
 |                                                                                              |
@@ -155,8 +155,8 @@ TASK 3: URI Dynamic Filtering (via AD Group Membership)
 | 9. Paste the expression below into the provided window and then click **Finished**.          |
 |                                                                                              |
 | Explanation: The expression shown parses the incoming URI to extract a portion of the URI    |
-|                                                                                              |    
-| to use as avariable in determining an AD Group Name dynamically.                             |                                                                     
+|                                                                                              |
+| to use as avariable in determining an AD Group Name dynamically.                             |
 +----------------------------------------------------------------------------------------------+
 | |image014|                                                                                   |
 +----------------------------------------------------------------------------------------------+
@@ -214,10 +214,10 @@ TASK 4: URI DataGroup Filtering (via AD Group Membership)
 | 8. Paste the expression below into the provided window and then click **Finished**.          |
 |                                                                                              |
 | Explanation: For environments in which URI's and AD Groups may not be standardized, parsing  |
-|                                                                                              |    
-| the URI and then leveraging a Data Group match allows for more non-standard matching between | 
-|                                                                                              |    
-| URI and AD Groups. (Data Groups are updateble through REST (AS3 Declarations) calls.         | 
+|                                                                                              |
+| the URI and then leveraging a Data Group match allows for more non-standard matching between |
+|                                                                                              |
+| URI and AD Groups. (Data Groups are updateble through REST (AS3 Declarations) calls.         |
 +----------------------------------------------------------------------------------------------+
 | |image020|                                                                                   |
 +----------------------------------------------------------------------------------------------+
