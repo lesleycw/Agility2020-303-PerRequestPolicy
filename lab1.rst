@@ -43,7 +43,7 @@ TASK 1: Intialize Access Guided Configuration (AGC)
 +----------------------------------------------------------------------------------------------+
 | 4. Click on the **Identity Aware Proxy**  dialogue box click under **Zero Trust**            |
 |                                                                                              |
-|    in the navigation as shown.                                                               | 
+|    in the navigation as shown.                                                               |
 +----------------------------------------------------------------------------------------------+
 | |image002|                                                                                   |
 +----------------------------------------------------------------------------------------------+
