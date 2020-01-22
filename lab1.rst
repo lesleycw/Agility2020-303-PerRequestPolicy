@@ -215,7 +215,7 @@ TASK 7: Applications
 |                                                                                              |
 | 8. In the **Pool Configuration** section, under **Health Monitors** area move                |
 |                                                                                              |
-|    **/Common/http** to the left **Selected** side.                                           |
+|    **/Common/http** to the right **Selected** side.                                          |
 |                                                                                              |
 | 9. In the **Pool Configuration** section, under **Load Balancing Method** area select        |
 |                                                                                              |
