@@ -229,7 +229,7 @@ TASK 7: Applications
 +----------------------------------------------------------------------------------------------+
 | 11. In the **Applications** dialogue window that follows, expand the **Subpaths** and ensure |
 |                                                                                              |
-|    app are present for the **agc-app.acme.com** row.                                         |
+|    /apps/app1*, /apps/app2*, /apps/app3* are present for the **agc-app.acme.com** row.       |
 |                                                                                              |
 | 12. Click the **Save & Next** button at the bottom of the dialogue window.                   |
 +----------------------------------------------------------------------------------------------+
