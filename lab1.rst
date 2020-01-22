@@ -110,7 +110,7 @@ TASK: 4: Configure User Identity
 |                                                                                              |
 | 7. Move the **memberOf** to the right under **Required Attributes**                          |
 |                                                                                              |
-| 8. Click **Save & Next** at the bottom of the dialogue window.                               |
+| 8. Click **Save** at the bottom of the dialogue window.                                      |
 +----------------------------------------------------------------------------------------------+
 | |image007|                                                                                   |
 +----------------------------------------------------------------------------------------------+
