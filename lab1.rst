@@ -166,9 +166,9 @@ TASK 6: Single Sign-on & HTTP Header
 |                                                                                              |
 |    - **Header Operation**: **replace**                                                       |
 |                                                                                              |
-|    - **Header Name**: **agc-app-uid**                                                        |
+|    - **Header Name**: **agc-memberOf**                                                       |
 |                                                                                              |
-|    - **Header Value**: **%{subsession.logon.last.username}**                                 |
+|    - **Header Value**: **%{subsession.ad.last.attr.memberof}**                               |
 |                                                                                              |
 | 7. At the bottom of the screen, click **Save**                                               |
 +----------------------------------------------------------------------------------------------+
