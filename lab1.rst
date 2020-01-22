@@ -168,7 +168,7 @@ TASK 6: Single Sign-on & HTTP Header
 |                                                                                              |
 |    - **Header Name**: **agc-memberOf**                                                       |
 |                                                                                              |
-|    - **Header Value**: **%{subsession.ad.last.attr.memberof}**                               |
+|    - **Header Value**: **%{subsession.ad.last.attr.memberOf}**                               |
 |                                                                                              |
 | 7. At the bottom of the screen, click **Save**                                               |
 +----------------------------------------------------------------------------------------------+
