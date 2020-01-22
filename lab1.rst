@@ -203,7 +203,7 @@ TASK 7: Applications
 |                                                                                              |
 | 3. In the **Name** field enter **agc-app.acme.com**.                                         |
 |                                                                                              |
-| 4. In the **FQDN** field enter **app.acme.com**.                                             |
+| 4. In the **FQDN** field enter **agc-app.acme.com**.                                             |
 |                                                                                              |
 | 5. In the **Subpath Pattern** field enter **/apps/app1\***.                                  |
 |                                                                                              |
