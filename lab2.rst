@@ -105,9 +105,11 @@ TASK 2: Review Existing Configuration
 +----------------------------------------------------------------------------------------------+
 | 10. Open **Firefox**, click on the **app.acme.com** link provided in the Bookmark toolbar.   |
 |                                                                                              |
-| 11. Note that currently, the logged in user, user1, has access to all applications even      |
+| 11. Logon to the resulting logon page with **UserID: user1** and **Password: user1**         |
 |                                                                                              |
-|     though the user does no currently have the necessary group access for all applications.  |
+| 11. Note that user1 has access to all applications even though user1 does not currently have |
+|                                                                                              |
+|     the necessary group access for all applications.                                         |
 +----------------------------------------------------------------------------------------------+
 | |image009|                                                                                   |
 |                                                                                              |
