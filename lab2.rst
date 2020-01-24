@@ -253,7 +253,7 @@ TASK 4: URI DataGroup Filtering (via AD Group Membership)
 |                                                                                              |
 |    **CN=member-services-B,OU=Groups,DC=f5lab,DC=local" then click the **Add** button.        |
 |                                                                                              |
-| 13. When correct;y added, click the **Update** button.                                       |
+| 13. When correctly added, click the **Update** button.                                       |
 +----------------------------------------------------------------------------------------------+
 | |image043|                                                                                   |
 +----------------------------------------------------------------------------------------------+
