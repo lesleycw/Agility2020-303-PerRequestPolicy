@@ -158,7 +158,7 @@ TASK 3: URI Dynamic Filtering (via AD Group Membership)
 |                                                                                              |
 | Explanation: The expression shown parses the incoming URI to extract a portion of the URI    |
 |                                                                                              |
-| to use as avariable in determining an AD Group Name dynamically.                             |
+| to use as a variable in determining an AD Group Name dynamically.                            |
 +----------------------------------------------------------------------------------------------+
 | |image014|                                                                                   |
 +----------------------------------------------------------------------------------------------+
