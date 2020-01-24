@@ -251,7 +251,7 @@ TASK 4: URI DataGroup Filtering (via AD Group Membership)
 +----------------------------------------------------------------------------------------------+
 | 12. In the **String** field, enter **serviceB** and in the **Value** field enter             |
 |                                                                                              |
-|    **CN=member-services-B,OU=Groups,DC=f5lab,DC=local" then click the **Add** button.        |
+|    **CN=member-services-B,OU=Groups,DC=f5lab,DC=local then click the **Add** button.        |
 |                                                                                              |
 | 13. When correctly added, click the **Update** button.                                       |
 +----------------------------------------------------------------------------------------------+
