@@ -71,7 +71,7 @@ TASK 2: Review Existing Configuration
 +----------------------------------------------------------------------------------------------+
 | 5. Note that the **app.acme.com_psp** Access Policy simply has **Start -> Allow**.  All      |
 |                                                                                              |
-|    Access configurations will occur in the Per Reuqest Policy.                               |
+|    Access configurations will occur in the Per Request Policy.                               |
 +----------------------------------------------------------------------------------------------+
 | |image005|                                                                                   |
 +----------------------------------------------------------------------------------------------+
