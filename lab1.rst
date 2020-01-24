@@ -85,7 +85,7 @@ TASK: 3: Configure Virtual Server Properties
 |                                                                                              |
 | 5. Select the **Use Existing** radio button under **Client SSL Profile**                     |
 |                                                                                              |
-| 6. Move the **f5demo** Client SSL Profile to the left, **Selected**                          |
+| 6. Move the **f5demo** Client SSL Profile to the right, **Selected**                         |
 |                                                                                              |
 | 7. Click **Save & Next** at the bottom of the dialogue window.                               |
 +----------------------------------------------------------------------------------------------+
