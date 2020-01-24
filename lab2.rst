@@ -183,7 +183,7 @@ TASK 4: URI DataGroup Filtering (via AD Group Membership)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +----------------------------------------------------------------------------------------------+
-| 1. In the Visual Policy Editor window, click on the **+ (Plus Symbol)** on the **member**    |
+| 1. In the Visual Policy Editor window, click on the **+ (Plus Symbol)** on the **members**   |
 |                                                                                              |
 |     branch following **URL Branching**.                                                      |
 |                                                                                              |
