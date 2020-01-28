@@ -390,7 +390,7 @@ TASK 7: Dynamic Group Checks
 +----------------------------------------------------------------------------------------------+
 | 13. In the resulting window, click the **Assignment** tab, then select the radio button on   |
 |                                                                                              |
-|     the **Variable Assign** row, then click **Add Item**.                                    |
+|     the **Variable Assign** row, then the click **Add Item** button.                         |
 +----------------------------------------------------------------------------------------------+
 | |image061|                                                                                   |
 +----------------------------------------------------------------------------------------------+
@@ -402,7 +402,7 @@ TASK 7: Dynamic Group Checks
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 15. Modify the emty assignment as follows, then click the **Finished** button.               |
+| 15. Modify the empty assignment as follows, then click the **Finished** button.               |
 |                                                                                              |
 |- **Custom Variable: subsession.logon.last.username**                                         |
 |                                                                                              |
@@ -412,13 +412,13 @@ TASK 7: Dynamic Group Checks
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 16. Varify the variable assignment, then click the **Save** button.                          |
+| 16. Verify the variable assignment, then click the **Save** button.                          |
 +----------------------------------------------------------------------------------------------+
 | |image064|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 17. Varify the **Dynamic GroupCheck** Subroutine contains both AD Query and Variable Assign  |
+| 17. Verify the **Dynamic GroupCheck** Subroutine contains both AD Query and Variable Assign  |
 |     objects.                                                                                 |
 +----------------------------------------------------------------------------------------------+
 | |image065|                                                                                   |
