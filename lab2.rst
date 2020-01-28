@@ -792,4 +792,20 @@ TASK 11: End of Lab2
 .. |image060| image:: media/lab2-060.png
    :width: 4.5in
    :height: 2.32in
-  
+.. |image061| image:: media/lab2-061.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image062| image:: media/lab2-062.png
+   :width: 4.5in
+   :height: 2.32in   
+.. |image063| image:: media/lab2-063.png
+   :width: 4.5in
+   :height: 2.32in  
+.. |image064| image:: media/lab2-064.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image065| image:: media/lab2-065.png
+   :width: 4.5in
+   :height: 2.32in
+   
+   
