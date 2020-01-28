@@ -402,7 +402,7 @@ TASK 7: Dynamic Group Checks
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 15. Modify the empty assignment as follows, then click the **Finished** button.               |
+| 15. Modify the empty assignment as follows, then click the **Finished** button.              |
 |                                                                                              |
 |- **Custom Variable: subsession.logon.last.username**                                         |
 |                                                                                              |
