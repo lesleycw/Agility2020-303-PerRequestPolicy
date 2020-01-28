@@ -609,7 +609,7 @@ TASK 11: End of Lab2
 +----------------------------------------------------------------------------------------------+
 | 1. This concludes Lab2, feel free to review and test the configuration.                      |
 +----------------------------------------------------------------------------------------------+
-| |image046|                                                                                   |
+| |image000|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 .. |image001| image:: media/lab2-001.png
@@ -807,5 +807,8 @@ TASK 11: End of Lab2
 .. |image065| image:: media/lab2-065.png
    :width: 4.5in
    :height: 2.32in
+.. |image000| image:: media/image001.png
+   :width: 4.5in
+   :height: 2.32in   
    
    
