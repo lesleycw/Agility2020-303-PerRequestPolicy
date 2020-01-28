@@ -563,7 +563,7 @@ TASK 9: Step-Up Authentication (Client Cert Auth)
 +----------------------------------------------------------------------------------------------+
 | 11. In the main section of the **app.acme.com_prp** policy click the **+ (Plus Symbol)** in  |
 |                                                                                              |
-|     both the **admin** branch.                                                               |
+|     the **admin** branch.                                                                    |
 |                                                                                              |
 | 12. In the resulting pop-up window, click the **Subroutines** tab, the click the radio       |
 |                                                                                              |
