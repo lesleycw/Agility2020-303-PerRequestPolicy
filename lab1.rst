@@ -85,7 +85,7 @@ TASK: 3: Configure Virtual Server Properties
 |                                                                                              |
 | 5. Select the **Use Existing** radio button under **Client SSL Profile**                     |
 |                                                                                              |
-| 6. Move the **f5demo** Client SSL Profile to the left, **Selected**                          |
+| 6. Move the **f5demo** Client SSL Profile to the right, **Selected**                         |
 |                                                                                              |
 | 7. Click **Save & Next** at the bottom of the dialogue window.                               |
 +----------------------------------------------------------------------------------------------+
@@ -108,9 +108,9 @@ TASK: 4: Configure User Identity
 |                                                                                              |
 | 6. Check the **Fetch Nested Group** checkbox.                                                |
 |                                                                                              |
-| 7. Move the **memberOf** to the left under **Required Attributes**                           |
+| 7. Move the **memberOf** to the right under **Required Attributes**                          |
 |                                                                                              |
-| 8. Click **Save & Next** at the bottom of the dialogue window.                               |
+| 8. Click **Save** at the bottom of the dialogue window.                                      |
 +----------------------------------------------------------------------------------------------+
 | |image007|                                                                                   |
 +----------------------------------------------------------------------------------------------+
@@ -168,7 +168,7 @@ TASK 6: Single Sign-on & HTTP Header
 |                                                                                              |
 |    - **Header Name**: **agc-memberOf**                                                       |
 |                                                                                              |
-|    - **Header Value**: **%{subsession.ad.last.attr.memberof}**                               |
+|    - **Header Value**: **%{subsession.ad.last.attr.memberOf}**                               |
 |                                                                                              |
 | 7. At the bottom of the screen, click **Save**                                               |
 +----------------------------------------------------------------------------------------------+
@@ -187,51 +187,43 @@ TASK 6: Single Sign-on & HTTP Header
 
 TASK 7: Applications
 ~~~~~~~~~~~~~~~~~~~~
-
-+----------------------------------------------------------------------------------------------+
-| 1. Check **Enable Single Sign-on (Optional)** checkbox in the                                |
-|                                                                                              |
-|    **Single Sign-on & HTTP Header** dialogue window.                                         |
-+----------------------------------------------------------------------------------------------+
-| |image013|                                                                                   |
-+----------------------------------------------------------------------------------------------+
   
 +----------------------------------------------------------------------------------------------+
-| 2. In the **Application Properties** dialogue window, click **Show Advanced Setting** in the |
+| 1. In the **Application Properties** dialogue window, click **Show Advanced Setting** in the |
 |                                                                                              |
 |    upper right hand corner of the dialogue window.                                           |
 |                                                                                              |
-| 3. In the **Name** field enter **agc-app.acme.com**.                                         |
+| 2. In the **Name** field enter **agc-app.acme.com**.                                         |
 |                                                                                              |
-| 4. In the **FQDN** field enter **app.acme.com**.                                             |
+| 3. In the **FQDN** field enter **agc-app.acme.com**.                                         |
 |                                                                                              |
-| 5. In the **Subpath Pattern** field enter **/apps/app1\***.                                  |
+| 4. In the **Subpath Pattern** field enter **/apps/app1\***.                                  |
 |                                                                                              |
-| 6. On the **Subpath Pattern** row entered in Step 5, click the **+ (Plus Symbol)** twice     |
+| 5. On the **Subpath Pattern** row entered in Step 5, click the **+ (Plus Symbol)** twice     |
 |                                                                                              |
 |    to add to more rows.                                                                      |
 |                                                                                              |
-| 7. In the two new rows add **/apps/app2\*** and **/apps/app3\*** respectively.               |
+| 6. In the two new rows add **/apps/app2\*** and **/apps/app3\*** respectively.               |
 |                                                                                              |
-| 8. In the **Pool Configuration** section, under **Health Monitors** area move                |
+| 7. In the **Pool Configuration** section, under **Health Monitors** area move                |
 |                                                                                              |
-|    **/Common/http** to the left **Selected** side.                                           |
+|    **/Common/http** to the right **Selected** side.                                          |
 |                                                                                              |
-| 9. In the **Pool Configuration** section, under **Load Balancing Method** area select        |
+| 8. In the **Pool Configuration** section, under **Load Balancing Method** area select        |
 |                                                                                              |
 |    **/Common/10.1.20.6** from the **IP Address/Node name**                                   |
 |                                                                                              |
-| 10. Click the **Save** button at the bottom of the dialogue window.                          |
+| 9. Click the **Save** button at the bottom of the dialogue window.                           |
 +----------------------------------------------------------------------------------------------+
 | |image014|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 11. In the **Applications** dialogue window that follows, expand the **Subpaths** and ensure |
+| 10. In the **Applications** dialogue window that follows, expand the **Subpaths** and ensure |
 |                                                                                              |
-|    app are present for the **agc-app.acme.com** row.                                         |
+|    /apps/app1*, /apps/app2*, /apps/app3* are present for the **agc-app.acme.com** row.       |
 |                                                                                              |
-| 12. Click the **Save & Next** button at the bottom of the dialogue window.                   |
+| 11. Click the **Save & Next** button at the bottom of the dialogue window.                   |
 +----------------------------------------------------------------------------------------------+
 | |image015|                                                                                   |
 +----------------------------------------------------------------------------------------------+

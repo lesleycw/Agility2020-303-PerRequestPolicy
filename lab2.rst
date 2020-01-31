@@ -71,7 +71,7 @@ TASK 2: Review Existing Configuration
 +----------------------------------------------------------------------------------------------+
 | 5. Note that the **app.acme.com_psp** Access Policy simply has **Start -> Allow**.  All      |
 |                                                                                              |
-|    Access configurations will occur in the Per Reuqest Policy.                               |
+|    Access configurations will occur in the Per Request Policy.                               |
 +----------------------------------------------------------------------------------------------+
 | |image005|                                                                                   |
 +----------------------------------------------------------------------------------------------+
@@ -105,9 +105,11 @@ TASK 2: Review Existing Configuration
 +----------------------------------------------------------------------------------------------+
 | 10. Open **Firefox**, click on the **app.acme.com** link provided in the Bookmark toolbar.   |
 |                                                                                              |
-| 11. Note that currently, the logged in user, user1, has access to all applications even      |
+| 11. Logon to the resulting logon page with **UserID: user1** and **Password: user1**         |
 |                                                                                              |
-|     though the user does no currently have the necessary group access for all applications.  |
+| 11. Note that user1 has access to all applications even though user1 does not currently have |
+|                                                                                              |
+|     the necessary group access for all applications.                                         |
 +----------------------------------------------------------------------------------------------+
 | |image009|                                                                                   |
 |                                                                                              |
@@ -156,7 +158,7 @@ TASK 3: URI Dynamic Filtering (via AD Group Membership)
 |                                                                                              |
 | Explanation: The expression shown parses the incoming URI to extract a portion of the URI    |
 |                                                                                              |
-| to use as avariable in determining an AD Group Name dynamically.                             |
+| to use as a variable in determining an AD Group Name dynamically.                            |
 +----------------------------------------------------------------------------------------------+
 | |image014|                                                                                   |
 +----------------------------------------------------------------------------------------------+
@@ -249,9 +251,9 @@ TASK 4: URI DataGroup Filtering (via AD Group Membership)
 +----------------------------------------------------------------------------------------------+
 | 12. In the **String** field, enter **serviceB** and in the **Value** field enter             |
 |                                                                                              |
-|    **CN=member-services-B,OU=Groups,DC=f5lab,DC=local" then click the **Add** button.        |
+|    **CN=member-services-B,OU=Groups,DC=f5lab,DC=local then click the **Add** button.        |
 |                                                                                              |
-| 13. When correct;y added, click the **Update** button.                                       |
+| 13. When correctly added, click the **Update** button.                                       |
 +----------------------------------------------------------------------------------------------+
 | |image043|                                                                                   |
 +----------------------------------------------------------------------------------------------+
@@ -380,11 +382,54 @@ TASK 7: Dynamic Group Checks
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 12. In the main section of the **app.acme.com_prp** policy click the **+ (Plus Symbol)** in  |
+| 12. In the **Dynamic GroupCheck** Subroutine click the **+ (Plus Symbol)** before AD Query   |                                                             
++----------------------------------------------------------------------------------------------+
+| |image060|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------+
+| 13. In the resulting window, click the **Assignment** tab, then select the radio button on   |
+|                                                                                              |
+|     the **Variable Assign** row, then the click **Add Item** button.                         |
++----------------------------------------------------------------------------------------------+
+| |image061|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------+
+| 14. In the **Variable Assign** window, click the **Add new entry** button.                   |
++----------------------------------------------------------------------------------------------+
+| |image062|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------+
+| 15. Modify the empty assignment as follows, then click the **Finished** button.              |
+|                                                                                              |
+|- **Custom Variable: subsession.logon.last.username**                                         |
+|                                                                                              |
+|- **Session Variable: session.logon.last.username**                                           |
++----------------------------------------------------------------------------------------------+
+| |image063|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------+
+| 16. Verify the variable assignment, then click the **Save** button.                          |
++----------------------------------------------------------------------------------------------+
+| |image064|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------+
+| 17. Verify the **Dynamic GroupCheck** Subroutine contains both AD Query and Variable Assign  |
+|     objects.                                                                                 |
++----------------------------------------------------------------------------------------------+
+| |image065|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------+
+| 18. In the main section of the **app.acme.com_prp** policy click the **+ (Plus Symbol)** in  |
 |                                                                                              |
 |     both the **apps** and **member** branches.                                               |
 |                                                                                              |
-| 13. In the resulting pop-up window, click the **Subroutines** tab, the click the radio       |
+| 19. In the resulting pop-up window, click the **Subroutines** tab, the click the radio       |
 |                                                                                              |
 |     button on the **Dynamic GroupCheck** and then click the **Add Item** button. Do this     |
 |                                                                                              |
@@ -394,7 +439,7 @@ TASK 7: Dynamic Group Checks
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 14. Review the policy changes to confirm subroutines have been added correctly.              |
+| 20. Review the policy changes to confirm subroutines have been added correctly.              |
 +----------------------------------------------------------------------------------------------+
 | |image038|                                                                                   |
 +----------------------------------------------------------------------------------------------+
@@ -518,7 +563,7 @@ TASK 9: Step-Up Authentication (Client Cert Auth)
 +----------------------------------------------------------------------------------------------+
 | 11. In the main section of the **app.acme.com_prp** policy click the **+ (Plus Symbol)** in  |
 |                                                                                              |
-|     both the **admin** branch.                                                               |
+|     the **admin** branch.                                                                    |
 |                                                                                              |
 | 12. In the resulting pop-up window, click the **Subroutines** tab, the click the radio       |
 |                                                                                              |
@@ -564,7 +609,7 @@ TASK 11: End of Lab2
 +----------------------------------------------------------------------------------------------+
 | 1. This concludes Lab2, feel free to review and test the configuration.                      |
 +----------------------------------------------------------------------------------------------+
-| |image060|                                                                                   |
+| |image000|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 .. |image001| image:: media/lab2-001.png
@@ -747,4 +792,23 @@ TASK 11: End of Lab2
 .. |image060| image:: media/lab2-060.png
    :width: 4.5in
    :height: 2.32in
-  
+.. |image061| image:: media/lab2-061.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image062| image:: media/lab2-062.png
+   :width: 4.5in
+   :height: 2.32in   
+.. |image063| image:: media/lab2-063.png
+   :width: 4.5in
+   :height: 2.32in  
+.. |image064| image:: media/lab2-064.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image065| image:: media/lab2-065.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image000| image:: media/image001.png
+   :width: 4.5in
+   :height: 2.32in   
+   
+   
