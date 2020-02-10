@@ -486,7 +486,7 @@ TASK 7: End of Lab3
 .. |image006| image:: media/lab3-006.png
    :width: 4.5in
    :height: 2.32in
-.. |image007| image:: media/lab2-009.png
+.. |image007| image:: media/lab3-007.png
    :width: 4.5in
    :height: 2.32in
 .. |image008| image:: media/lab3-008.png
