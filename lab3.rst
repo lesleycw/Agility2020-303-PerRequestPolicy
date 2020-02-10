@@ -286,9 +286,9 @@ TASK 3: Extended Logon Subroutine
 +----------------------------------------------------------------------------------------------+
 | 18. In the resulting **HTTP Headers** window, click the **Add new entry** button three(3)    |
 |                                                                                              |
-| times to add three(3) rows in the **Header Modify Section**.  Use the following values to    |
+|   times to add three(3) rows in the **Header Modify Section**.  Use the following values to  |
 |                                                                                              |
-| complete each added row.                                                                     |
+|   complete each added row.                                                                   |
 |                                                                                              |
 | **ROW 1**                                                                                    |
 |                                                                                              |
