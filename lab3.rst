@@ -46,8 +46,6 @@ TASK 1: Prepare Lab Environment
 |    This prepares the environment for further user testing.                                   |
 +----------------------------------------------------------------------------------------------+
 | |image001|                                                                                   |
-|                                                                                              |
-| |image002|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 TASK 2: Review HTTP Connector Configuration
@@ -64,9 +62,9 @@ TASK 2: Review HTTP Connector Configuration
 |                                                                                              |
 |    to queried Web Service and API endpoints.                                                 |
 +----------------------------------------------------------------------------------------------+
-| |image003|                                                                                   |
+| |image002|                                                                                   |
 |                                                                                              |
-| |image004|                                                                                   |
+| |image003|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
@@ -84,9 +82,9 @@ TASK 2: Review HTTP Connector Configuration
 |                                                                                              |
 |    in the Per Request Policy flow.                                                           |
 +----------------------------------------------------------------------------------------------+
-| |image005|                                                                                   |
+| |image004|                                                                                   |
 |                                                                                              |
-| |image006|                                                                                   |
+| |image005|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
@@ -100,9 +98,9 @@ TASK 2: Review HTTP Connector Configuration
 |                                                                                              |
 |    Note: The Application (client_id) has been granted API Permissions for User.Read.All      |
 +----------------------------------------------------------------------------------------------+
-| |image007|                                                                                   |
+| |image004|                                                                                   |
 |                                                                                              |
-| |image008|                                                                                   |
+| |image006|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 TASK 3: Extened Logon Subroutine
@@ -115,7 +113,7 @@ TASK 3: Extened Logon Subroutine
 |                                                                                              |
 |    Note: This may already be open.                                                           |
 +----------------------------------------------------------------------------------------------+
-| |image009| (lab2 image 9)                                                                    |
+| |image007|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
@@ -480,5 +478,197 @@ TASK 7: End of Lab3
 +----------------------------------------------------------------------------------------------+
 
 .. |image001| image:: media/lab3-001.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image002| image:: media/lab3-002.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image003| image:: media/lab3-003.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image004| image:: media/lab3-004.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image005| image:: media/lab3-005.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image006| image:: media/lab3-006.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image007| image:: media/lab2-009.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image008| image:: media/lab3-008.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image009| image:: media/lab3-009.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image010| image:: media/lab3-010.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image011| image:: media/lab3-011.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image012| image:: media/lab3-012.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image013| image:: media/lab3-013.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image014| image:: media/lab3-014.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image015| image:: media/lab3-015.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image016| image:: media/lab3-016.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image017| image:: media/lab3-017.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image018| image:: media/lab3-018.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image019| image:: media/lab3-019.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image020| image:: media/lab3-020.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image021| image:: media/lab3-021.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image022| image:: media/lab3-022.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image023| image:: media/lab3-023.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image024| image:: media/lab3-024.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image025| image:: media/lab3-025.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image026| image:: media/lab3-026.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image027| image:: media/lab3-027.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image028| image:: media/lab3-028.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image029| image:: media/lab3-029.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image030| image:: media/lab3-030.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image031| image:: media/lab3-031.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image032| image:: media/lab3-032.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image033| image:: media/lab3-033.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image034| image:: media/lab3-034.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image035| image:: media/lab3-035.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image036| image:: media/lab3-036.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image037| image:: media/lab3-037.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image038| image:: media/lab3-038.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image039| image:: media/lab3-039.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image040| image:: media/lab3-040.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image041| image:: media/lab3-041.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image042| image:: media/lab3-042.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image043| image:: media/lab3-043.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image044| image:: media/lab3-044.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image045| image:: media/lab3-045.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image046| image:: media/lab3-046.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image047| image:: media/lab3-047.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image048| image:: media/lab3-048.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image049| image:: media/lab3-049.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image050| image:: media/lab3-050.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image051| image:: media/lab3-051.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image052| image:: media/lab3-052.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image053| image:: media/lab3-053.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image054| image:: media/lab3-054.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image055| image:: media/lab3-055.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image056| image:: media/lab3-056.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image057| image:: media/lab3-057.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image058| image:: media/lab3-058.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image059| image:: media/lab3-059.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image060| image:: media/lab3-060.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image061| image:: media/lab3-061.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image062| image:: media/lab3-062.png
+   :width: 4.5in
+   :height: 2.32in   
+.. |image063| image:: media/lab3-063.png
+   :width: 4.5in
+   :height: 2.32in  
+.. |image064| image:: media/lab3-064.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image065| image:: media/lab3-065.png
    :width: 4.5in
    :height: 2.32in
