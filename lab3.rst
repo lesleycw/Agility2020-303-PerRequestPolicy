@@ -1,3 +1,6 @@
+NOTE: This lab has a publication error which I am currently correcting and will be completed by 2/10/2020
+
+
 Lab 3: Custom Per Request Policy - Extended
 ===========================================
 
