@@ -195,7 +195,11 @@ TASK 3: Extended Logon Subroutine
 |     the **Add new entry** button three(3) times. Click the **change** link in the first      |
 |                                                                                              |
 |     **empty** row.                                                                           |
-|                                                                                              |
++----------------------------------------------------------------------------------------------+
+| |image016|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------+
 | 12. In the resulting assignment window use the following values:                             |
 |                                                                                              |
 |     **LEFT SIDE**                                                                            |
@@ -204,18 +208,16 @@ TASK 3: Extended Logon Subroutine
 |                                                                                              |
 |     - **Unsecure**                                                                           |
 |                                                                                              |
-|     - Text Window: **session.custom.displayName**                                            |
+|     - **Text Window:** **session.custom.displayName**                                        |
 |                                                                                              |
 |     **RIGHT SIDE**                                                                           |
 |                                                                                              |
 |     - **Session Variable**                                                                   |
 |                                                                                              |
-|     - Text Window: **subsession.http_connector.body.displayName**                            |
+|     - **Text Window:** **subsession.http_connector.body.displayName**                        |
 |                                                                                              |
 | 13. Click **Finished** once complete.                                                        |
 +----------------------------------------------------------------------------------------------+
-| |image016|                                                                                   |
-|                                                                                              |
 | |image017|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
@@ -224,37 +226,37 @@ TASK 3: Extended Logon Subroutine
 |                                                                                              |
 |     below.                                                                                   |
 |                                                                                              |
-| ROW 2                                                                                        |
+| **ROW 2**                                                                                    |
 |                                                                                              |
-|     **LEFT SIDE**                                                                            |
+|   **LEFT SIDE**                                                                              |
 |                                                                                              |
-|     - **Custom Variable**                                                                    |
+|   - **Custom Variable**                                                                      |
 |                                                                                              |
-|     - **Unsecure**                                                                           |
+|   - **Unsecure**                                                                             |
 |                                                                                              |
-|     - Text Window: **session.custom.jobTitle**                                               |
+|   - **Text Window:** **session.custom.jobTitle**                                             |
 |                                                                                              |
-|     **RIGHT SIDE**                                                                           |
+|   **RIGHT SIDE**                                                                             |
 |                                                                                              |
-|     - **Session Variable**                                                                   |
+|   - **Session Variable**                                                                     |
 |                                                                                              |
-|     - Text Window: **subsession.http_connector.body.jobTitle**                               |
+|   - **Text Window:** **subsession.http_connector.body.jobTitle**                             |
 |                                                                                              |
-| ROW 3                                                                                        |
+| **ROW 3**                                                                                    |
 |                                                                                              |
-|     **LEFT SIDE**                                                                            |
+|   **LEFT SIDE**                                                                              |
 |                                                                                              |
-|     - **Custom Variable**                                                                    |
+|   - **Custom Variable**                                                                      |
 |                                                                                              |
-|     - **Unsecure**                                                                           |
+|   - **Unsecure**                                                                             |
 |                                                                                              |
-|     - Text Window: **session.custom.mobilePhone**                                            |
+|   - **Text Window:** **session.custom.mobilePhone**                                          |
 |                                                                                              |
-|     **RIGHT SIDE**                                                                           |
+|   **RIGHT SIDE**                                                                             |
 |                                                                                              |
-|     - **Session Variable**                                                                   |
+|   - **Session Variable**                                                                     |
 |                                                                                              |
-|     - Text Window: **subsession.http_connector.body.mobilePhone**                            |
+|   - **Text Window:** **subsession.http_connector.body.mobilePhone**                          |
 +----------------------------------------------------------------------------------------------+
 | |image018|                                                                                   |
 |                                                                                              |
