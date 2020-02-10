@@ -151,7 +151,7 @@ TASK 3: Extened Logon Subroutine
 +----------------------------------------------------------------------------------------------+
 | 6. In the **Logon** subroutine and click the **+ (Plus Symbol) on the **Successful** branch  |
 |                                                                                              |
-|    following the **MSGraphAPI Request Token** and before the **Variable Assign**.            |    
+|    following the **MSGraphAPI Request Token** and before the **Variable Assign**.            |
 |                                                                                              |
 | 7. In the pop-up window, select the **General Purpose** tab, then click the radio button     |
 |                                                                                              |
@@ -179,9 +179,9 @@ TASK 3: Extened Logon Subroutine
 +----------------------------------------------------------------------------------------------+
 | Note: The extending of Per Request Policies using the HTTP Connector can be leveraged to     |
 |                                                                                              |
-|       query any Web Service or API endpoint.  In this case, MS Graph API is being leveraged  |
+| query any Web Service or API endpoint.  In this case, MS Graph API is being leveraged to     |
 |                                                                                              |
-|       to retrieve additional information regarding a logged in user.                         |
+| retrieve additional information regarding a logged in user.                                  |
 +----------------------------------------------------------------------------------------------+
 | |image010|                                                                                   |
 |                                                                                              |
@@ -189,7 +189,7 @@ TASK 3: Extened Logon Subroutine
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 10. In the **Logon** subroutine click the link for the **Variable Assign**.                  |    
+| 10. In the **Logon** subroutine click the link for the **Variable Assign**.                  |
 +----------------------------------------------------------------------------------------------+
 | |image010|                                                                                   |
 |                                                                                              |
@@ -332,8 +332,8 @@ TASK 3: Extened Logon Subroutine
 | |image010|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
-TASK 4: Testing the Extened Logon Subroutine
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TASK 4: Testing & Reviewing the Extened Logon Subroutine
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +----------------------------------------------------------------------------------------------+
 | 1. Return to Firefox on the **Jumphost** test access to the **app.acme.com** application and |
@@ -344,15 +344,7 @@ TASK 4: Testing the Extened Logon Subroutine
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 2. In the resulting Visual Policy Editor window for the On  **app.acme.com_prp**, expand the |
-|                                                                                              |
-|    **Logon** subroutine and click the **+ (Plus Symbol) on the **fallback** branch following |
-|                                                                                              |
-|    the **Variable Assign**.                                                                  |
-|                                                                                              |
-| 3. In the pop-up window, select the **General Purpose** tab, then click the radio button     |
-|                                                                                              |
-|    on the **HTTP Connector** action line, then click **Add Item**.                           |
+| 2. Note the newly injected headers into **Application 1's** display page.                    |
 +----------------------------------------------------------------------------------------------+
 | |image010|                                                                                   |
 |                                                                                              |
@@ -360,13 +352,13 @@ TASK 4: Testing the Extened Logon Subroutine
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 4. In the resulting HTTP Connector window, change the **Name** field to **MSGraphAPI**       |
+| 3. Return to **bigip1.f5lab.local**, navigate to **Access -> Overview -> Active Sessions**.  |
 |                                                                                              |
-|    **Request Token**.                                                                        |
+|    Expand the **+ (Plus Symbol)** to see the subsession.                                     |
 |                                                                                              |
-| 5. In the **HTTP Connector** section, Select **/Common/MSGraphAPI_RequestToken** from the    |
+| 4. Click on the **View** link in the **Variables** column for the listed subsession.         |
 |                                                                                              |
-|    the drop down for **HTTP Connector Request** and then click **Save**.                     |
+| 5  Review the variables collected via the HTTP Connector Requests.                           |
 +----------------------------------------------------------------------------------------------+
 | |image010|                                                                                   |
 |                                                                                              |
@@ -374,13 +366,61 @@ TASK 4: Testing the Extened Logon Subroutine
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 6. In the **Logon** subroutine and click the **+ (Plus Symbol) on the **Successful** branch  |
+| 6. Navigate to **Access -> Overview -> Active Sessions**. Click on the **View** link in the  |
 |                                                                                              |
-|    following the **MSGraphAPI Request Token**.                                               |    
+|    **Variables** column for the listed session.                                              |
 |                                                                                              |
-| 7. In the pop-up window, select the **General Purpose** tab, then click the radio button     |
+| 7  Review the actions in the Session log, particularly those associated with HTTP Connector  |
 |                                                                                              |
-|    on the **HTTP Connector** action line, then click **Add Item**.                           |
+|    Requests.                                                                                 |
++----------------------------------------------------------------------------------------------+
+| |image010|                                                                                   |
+|                                                                                              |
+| |image010|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
+TASK 5: Configuring Gating Criteria 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
++----------------------------------------------------------------------------------------------+
+| 1. Navigate to **Access -> Profiles/Policies -> Per-Request Policies** and then click the    |
+|                                                                                              |
+|    **Edit** link for the **app.acme.com_prp** Per Request Policy.                            |
+|                                                                                              |
+|    Note: This may already be open.                                                           |
++----------------------------------------------------------------------------------------------+
+| |image009| (lab2 image 9)                                                                    |
++----------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------+
+| 2. In the resulting Visual Policy Editor window for **app.acme.com_prp**, expand the         |
+|                                                                                              |
+|    **Logon** subroutine and click the **Subroutine Settings/Rename** link.                   |
+|                                                                                              |
+| 3. In the pop-up window, in the **Gating Criteria** field, enter                             |
+|                                                                                              |
+|    **perflow.client.ip.address** and click **Save**.                                         |
++----------------------------------------------------------------------------------------------+
+| |image001|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
+TASK 6: Testing Gating Criteria 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
++----------------------------------------------------------------------------------------------+
+| 1. Return to Firefox on the **Jumphost** test access to the **app.acme.com** application and |
+|                                                                                              |
+|    access App1. Re-login to the application if necessary.                                    |
++----------------------------------------------------------------------------------------------+
+| |image009| (lab2 image 9)                                                                    |
++----------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------+
+| 2. Confirm on that your session is active on **bigip1.f5lab.local**, by navigating to        |
+|                                                                                              |
+|    **Access -> Overview -> Active Sessions**. Expand the **+ (Plus Symbol)** to see the      |
+|                                                                                              |
+|     subsession.                                                                              |
 +----------------------------------------------------------------------------------------------+
 | |image010|                                                                                   |
 |                                                                                              |
@@ -388,13 +428,41 @@ TASK 4: Testing the Extened Logon Subroutine
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 8. In the resulting HTTP Connector window, change the **Name** field to **MSGraphAPI**       |
+| 3. Return to the **Jumphost**.  Do **NOT** close the brower and the already opened           |
 |                                                                                              |
-|    **Get User Profile**.                                                                     |
+|    application.                                                                              |
 |                                                                                              |
-| 9. In the **HTTP Connector** section, Select **/Common/MSGraphAPI_GetUserProfile** from the  |
+| 4. Navigate to the Jumphost desktop and click on the **Change IP 10.1.10.11** link (Confirm  |
 |                                                                                              |
-|    the drop down for **HTTP Connector Request** and then click **Save**.                     |
+|    the elevated Adminstrator privledge).                                                     |
+|                                                                                              |
+| 5. Return to Firefox and the **app.acme.com** application by acessing App1 again. Note that  |
+|                                                                                              |
+|    you will be re-prompted for access.                                                       |
++----------------------------------------------------------------------------------------------+
+| |image009| (lab2 image 9)                                                                    |
++----------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------+
+| 6. Return to **bigip1.f5lab.local**, and navigate to **Access -> Overview -> Active**        |
+|                                                                                              |
+|    **Sessions**. Expand the **+ (Plus Symbol)** to see the two(2) subsessions now associated |
+|                                                                                              |
+|     with your session. (You may alternatively refresh the screen if already opened.          |
++----------------------------------------------------------------------------------------------+
+| |image010|                                                                                   |
+|                                                                                              |
+| |image010|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------+
+| Note: The are multiple examples of Gating Criteria. In this example, client IP was used to   |
+|                                                                                              |
+| show that any changes in the connecting entity can result in establishing a new subsession.  |
+|                                                                                              |
+| What happens in new subsessions, the number of subsessions and how they are controlled is    |
+|                                                                                              |
+| based on customer/application need.                                                          |
 +----------------------------------------------------------------------------------------------+
 | |image010|                                                                                   |
 |                                                                                              |
@@ -402,18 +470,14 @@ TASK 4: Testing the Extened Logon Subroutine
 +----------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------+
-| Note: The extending of Per Request Policies using the HTTP Connector can be leveraged to     |
-|                                                                                              |
-|       query any Web Service or API endpoint.  In the case, MS Graph API is being leveraged   |
-|                                                                                              |
-|       to retrieve additional information regarding a logged in user.                         |
-+----------------------------------------------------------------------------------------------+
-| |image010|                                                                                   |
-|                                                                                              |
-| |image010|                                                                                   |
-+----------------------------------------------------------------------------------------------+
+TASK 7: End of Lab3
+~~~~~~~~~~~~~~~~~~~~
 
++----------------------------------------------------------------------------------------------+
+| 1. This concludes Lab3, feel free to review and test the configuration.                      |
++----------------------------------------------------------------------------------------------+
+| |image000|                                                                                   |
++----------------------------------------------------------------------------------------------+
 
 .. |image001| image:: media/lab3-001.png
    :width: 4.5in
