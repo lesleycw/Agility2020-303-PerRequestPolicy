@@ -228,19 +228,19 @@ TASK 3: Extended Logon Subroutine
 |                                                                                              |
 | **ROW 2**                                                                                    |
 |                                                                                              |
-|   **LEFT SIDE**                                                                              |
+| -  **LEFT SIDE**                                                                             |
 |                                                                                              |
-|   - **Custom Variable**                                                                      |
+| * **Custom Variable**                                                                        |
 |                                                                                              |
-|   - **Unsecure**                                                                             |
+| * **Unsecure**                                                                               |
 |                                                                                              |
-|   - **Text Window:** **session.custom.jobTitle**                                             |
+| * **Text Window:** **session.custom.jobTitle**                                               |
 |                                                                                              |
-|   **RIGHT SIDE**                                                                             |
+| -  **RIGHT SIDE**                                                                            |
 |                                                                                              |
-|   - **Session Variable**                                                                     |
+| * **Session Variable**                                                                       |
 |                                                                                              |
-|   - **Text Window:** **subsession.http_connector.body.jobTitle**                             |
+| * **Text Window:** **subsession.http_connector.body.jobTitle**                               |
 |                                                                                              |
 | **ROW 3**                                                                                    |
 |                                                                                              |
@@ -288,9 +288,9 @@ TASK 3: Extended Logon Subroutine
 +----------------------------------------------------------------------------------------------+
 | 18. In the resulting **HTTP Headers** window, click the **Add new entry** button three(3)    |
 |                                                                                              |
-|   times to add three(3) rows in the **Header Modify Section**.  Use the following values to  |
+|  times to add three(3) rows in the **Header Modify Section**.  Use the following values to   |
 |                                                                                              |
-|   complete each added row.                                                                   |
+|  complete each added row.                                                                    |
 |                                                                                              |
 | **ROW 1**                                                                                    |
 |                                                                                              |
@@ -351,7 +351,7 @@ TASK 4: Testing & Reviewing the Extended Logon Subroutine
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 5  Review the variables collected via the HTTP Connector Requests.                           |
+| 5. Review the variables collected via the HTTP Connector Requests.                           |
 +----------------------------------------------------------------------------------------------+
 | |image028|                                                                                   |
 +----------------------------------------------------------------------------------------------+
@@ -365,9 +365,9 @@ TASK 4: Testing & Reviewing the Extended Logon Subroutine
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 7  Review the actions in the Session log, particularly those associated with HTTP Connector  |
+| 7. Review the actions in the Session log, particularly those associated with HTTP Connector  |
 |                                                                                              |
-|    Requests.                                                                                 |
+|  requests.                                                                                   |
 +----------------------------------------------------------------------------------------------+
 | |image029|                                                                                   |
 +----------------------------------------------------------------------------------------------+
