@@ -246,17 +246,17 @@ TASK 3: Extended Logon Subroutine
 |                                                                                              |
 | - **LEFT SIDE**                                                                              |
 |                                                                                              |
-| -- **Custom Variable**                                                                       |
+| .. **Custom Variable**                                                                       |
 |                                                                                              |
-| -- **Unsecure**                                                                              |
+| .. **Unsecure**                                                                              |
 |                                                                                              |
-| -- **Text Window:** **session.custom.mobilePhone**                                           |
+| .. **Text Window:** **session.custom.mobilePhone**                                           |
 |                                                                                              |
 | - **RIGHT SIDE**                                                                             |
 |                                                                                              |
-| -- **Session Variable**                                                                      |
+| .. **Session Variable**                                                                      |
 |                                                                                              |
-| -- **Text Window:** **subsession.http_connector.body.mobilePhone**                           |
+| .. **Text Window:** **subsession.http_connector.body.mobilePhone**                           |
 +----------------------------------------------------------------------------------------------+
 | |image018|                                                                                   |
 |                                                                                              |
