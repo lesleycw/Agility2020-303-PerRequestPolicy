@@ -4,11 +4,11 @@ NOTE: This lab has a publication error which I am currently correcting and will 
 Lab 3: Custom Per Request Policy - Extended
 ===========================================
 
-The purpose of this lab is change the behaviour of the custom Per Request Policies
-built during Lab2.  Lab attendees will expand policies by incoporating HTTP_Connector
-agents to query external API's and incorporate gating critera to enforce policy behavior
-while accessing the provided application.
-Students will configure the various aspects using the Visual Policy Editor,
+The purpose of this lab is to change the behavior of the custom Per Request Policies
+built during Lab 2.  Lab attendees will expand policies by incorporating HTTP_Connector
+agents to query external API's and incorporate Gating Criteria to enforce policy behavior
+while accessing the lab application.
+Students will configure the various aspects of this lab using the Visual Policy Editor,
 review the configuration and perform tests of the deployment.
 
 Objective:
@@ -83,7 +83,7 @@ TASK 2: Review HTTP Connector Configuration
 |                                                                                              |
 |    Note: While values like tenant_id, client_id & client_secret have been statically         |
 |                                                                                              |
-|    entered for the purposes of this lab, these could have been referenced varibles set       |
+|    entered for the purposes of this lab, these could have been referenced variables set      |
 |                                                                                              |
 |    in the Per Request Policy flow.                                                           |
 +----------------------------------------------------------------------------------------------+
@@ -97,9 +97,9 @@ TASK 2: Review HTTP Connector Configuration
 |                                                                                              |
 | 2. Click on the **MSGraphAPI_GetUserProfile** link.                                          |
 |                                                                                              |
-|    This configured resource uses a previsouly obtained oAuth Bearer Token and queries the    |
+|    This configured resource uses a previously obtained oAuth Bearer Token and queries the    |
 |                                                                                              |
-|    Microsoft Graph API for the queried user's proflie information.                           |
+|    Microsoft Graph API for the queried user's profile information.                           |
 |                                                                                              |
 |    Note: The Application (client_id) has been granted API Permissions for User.Read.All      |
 +----------------------------------------------------------------------------------------------+
@@ -108,8 +108,8 @@ TASK 2: Review HTTP Connector Configuration
 | |image008|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
-TASK 3: Extened Logon Subroutine
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TASK 3: Extended Logon Subroutine
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +----------------------------------------------------------------------------------------------+
 | 1. Navigate to **Access -> Profiles/Policies -> Per-Request Policies** and then click the    |
@@ -220,7 +220,7 @@ TASK 3: Extened Logon Subroutine
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 14. Repeat the process again for the remaing two(2) **empty** rows using the values shown    |
+| 14. Repeat the process again for the remaining two(2) **empty** rows using the values shown  |
 |                                                                                              |
 |     below.                                                                                   |
 |                                                                                              |
@@ -290,29 +290,29 @@ TASK 3: Extened Logon Subroutine
 |                                                                                              |
 |    complete each added row.                                                                  |
 |                                                                                              |
-| ROW 1                                                                                        |
+| **ROW 1**                                                                                    |
 |                                                                                              |
-|     **Header Operation:** **replace**                                                        |
+| - **Header Operation:** **replace**                                                          |
 |                                                                                              |
-|     **Header Name:** **displayName**                                                         |
+| - **Header Name:** **displayName**                                                           |
 |                                                                                              |
-|     **Header Value:** **%{session.custom.displayName} **                                     |
+| - **Header Value:** **%{session.custom.displayName}**                                        |
 |                                                                                              |
-| ROW 2                                                                                        |
+| **ROW 2**                                                                                    |
 |                                                                                              |
-|     **Header Operation:** **replace**                                                        |
+| - **Header Operation:** **replace**                                                          |
 |                                                                                              |
-|     **Header Name:** **jobTitle**                                                            |
+| - **Header Name:** **jobTitle**                                                              |
 |                                                                                              |
-|     **Header Value:** **%{session.custom.jobTitle} **                                        |
+| - **Header Value:** **%{session.custom.jobTitle}**                                           |
 |                                                                                              |
-| ROW 3                                                                                        |
+| **ROW 3**                                                                                    |
 |                                                                                              |
-|     **Header Operation:** **replace**                                                        |
+| - **Header Operation:** **replace**                                                          |
 |                                                                                              |
-|     **Header Name:** **mobilePhone**                                                         |
+| - **Header Name:** **mobilePhone**                                                           |
 |                                                                                              |
-|     **Header Value:** **%{session.custom.mobilePhone} **                                     |
+| - **Header Value:** **%{session.custom.mobilePhone}**                                        |
 |                                                                                              |
 | 19. Click **Save** once completed.                                                           |
 +----------------------------------------------------------------------------------------------+
@@ -321,8 +321,8 @@ TASK 3: Extened Logon Subroutine
 | |image024|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
-TASK 4: Testing & Reviewing the Extened Logon Subroutine
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TASK 4: Testing & Reviewing the Extended Logon Subroutine
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +----------------------------------------------------------------------------------------------+
 | 1. Return to Firefox on the **Jumphost** test access to the **app.acme.com** application and |
@@ -421,15 +421,15 @@ TASK 6: Testing Gating Criteria
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 3. Return to the **Jumphost**.  Do **NOT** close the brower and the already opened           |
+| 3. Return to the **Jumphost**.  Do **NOT** close the browser and the already opened          |
 |                                                                                              |
 |    application.                                                                              |
 |                                                                                              |
 | 4. Navigate to the Jumphost desktop and click on the **Change IP 10.1.10.11** link (Confirm  |
 |                                                                                              |
-|    the elevated Adminstrator privledge).                                                     |
+|    the elevated Administrator privlege).                                                     |
 |                                                                                              |
-| 5. Return to Firefox and the **app.acme.com** application by acessing App1 again. Note that  |
+| 5. Return to Firefox and the **app.acme.com** application by accessing App1 again. Note that |
 |                                                                                              |
 |    you will be re-prompted for access.                                                       |
 +----------------------------------------------------------------------------------------------+
