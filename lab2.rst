@@ -4,8 +4,8 @@ Lab 2: Custom Per Request Policy
 The purpose of this lab is to build a custom Per Request Policy (PRP) flow and
 then extend that policy with additional subroutines to perform dynamic updates
 to access controls and authentication requirements. Per Request Policies will
-restict or grant access based on dynamic queries of AD Group Membership and the
-URI accessed. Step-up authenitcation will also be leveraged.
+restrict or grant access based on dynamic queries of AD Group Membership and the
+URI accessed. Step-up authentication will also be leveraged.
 Students will configure the various aspects using the Visual Policy Editor,
 review the configuration and perform tests of the deployment.
 
@@ -107,9 +107,9 @@ TASK 2: Review Existing Configuration
 |                                                                                              |
 | 11. Logon to the resulting logon page with **UserID: user1** and **Password: user1**         |
 |                                                                                              |
-| 11. Note that user1 has access to all applications even though user1 does not currently have |
+| **Note:** *User1 has access to all applications even though user1 does not currently have*   |
 |                                                                                              |
-|     the necessary group access for all applications.                                         |
+| *the necessary group access for all applications.*                                           |
 +----------------------------------------------------------------------------------------------+
 | |image009|                                                                                   |
 |                                                                                              |
@@ -120,7 +120,7 @@ TASK 3: URI Dynamic Filtering (via AD Group Membership)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +----------------------------------------------------------------------------------------------+
-| 1. Navigate to **Access -> Profiles/Policies -> Per-Request Policies and then click the      |
+| 1. Navigate to **Access -> Profiles/Policies -> Per-Request Policies** and then click the    |
 |                                                                                              |
 |    **Edit** link for the **app.acme.com_prp** Per Request Policy.                            |
 |                                                                                              |
@@ -245,7 +245,7 @@ TASK 4: URI DataGroup Filtering (via AD Group Membership)
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 11. In the adminstration window, navigate to **Local Traffic -> iRules -> Data Group List**  |
+| 11. In the administration window, navigate to **Local Traffic -> iRules -> Data Group List** |
 |                                                                                              |
 |     and then click the **acme_app.acme.com_dg** data group link.                             |
 +----------------------------------------------------------------------------------------------+
@@ -289,7 +289,7 @@ TASK 6: Adding a new Application (App3)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +----------------------------------------------------------------------------------------------+
-| 1. Deploy **App3** by clicking on the **Deploy App3* PowerShell link provided on the         |
+| 1. Deploy **App3** by clicking on the **Deploy App3** PowerShell link provided on the        |
 |                                                                                              |
 |    jumphost desktop.                                                                         |
 +----------------------------------------------------------------------------------------------+
@@ -314,7 +314,7 @@ TASK 7: Dynamic Group Checks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +----------------------------------------------------------------------------------------------+
-| 1. Navigate to **Access -> Profiles/Policies -> Per-Request Policies and then click the      |
+| 1. Navigate to **Access -> Profiles/Policies -> Per-Request Policies** and then click the    |
 |                                                                                              |
 |    **Edit** link for the **app.acme.com_prp** Per Request Policy (or use the already open    |
 |                                                                                              |
