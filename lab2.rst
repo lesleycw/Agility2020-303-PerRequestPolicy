@@ -156,9 +156,9 @@ TASK 3: URI Dynamic Filtering (via AD Group Membership)
 |                                                                                              |
 | 9. Paste the expression below into the provided window and then click **Finished**.          |
 |                                                                                              |
-| Explanation: The expression shown parses the incoming URI to extract a portion of the URI    |
+| **Explanation:** *The expression shown parses the incoming URI to extract a portion of the*  |
 |                                                                                              |
-| to use as a variable in determining an AD Group Name dynamically.                            |
+| *URI to use as a variable in determining an AD Group Name dynamically.*                      |
 +----------------------------------------------------------------------------------------------+
 | |image014|                                                                                   |
 +----------------------------------------------------------------------------------------------+
@@ -303,7 +303,7 @@ TASK 6: Adding a new Application (App3)
 |                                                                                              |
 |    membership.                                                                               |
 |                                                                                              |
-| Note that no policy changes were required due to the dynamic URI mapping configured.         |
+| **Note:** *No policy changes were required due to the dynamic URI mapping configured.*       |
 +----------------------------------------------------------------------------------------------+
 | |image027|                                                                                   |
 |                                                                                              |
@@ -342,7 +342,7 @@ TASK 7: Dynamic Group Checks
 +----------------------------------------------------------------------------------------------+
 | 5. In the resulting window, click the **Authentication** tab, then select the radio button   |
 |                                                                                              |
-|     on the **AD Query** row, then click **Add Item**.                                        |
+|    on the **AD Query** row, then click **Add Item**.                                         |
 +----------------------------------------------------------------------------------------------+
 | |image032|                                                                                   |
 +----------------------------------------------------------------------------------------------+
