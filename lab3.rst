@@ -121,7 +121,7 @@ TASK 3: Extended Logon Subroutine
 +----------------------------------------------------------------------------------------------+
 | 2. In the resulting Visual Policy Editor window for the On  **app.acme.com_prp**, expand the |
 |                                                                                              |
-|    **Logon** subroutine and click the **+ (Plus Symbol) on the **Successful** branch         |
+|    **Logon** subroutine and click the **+ (Plus Symbol)** on the **Successful** branch       |
 |                                                                                              |
 |    following the **AD Query** and before the **Variable Assign**.                            |
 |                                                                                              |
@@ -446,9 +446,9 @@ TASK 6: Testing Gating Criteria
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| **Note:* *The are multiple examples of Gating Criteria. In this example, client IP was used* |
+| **Note:** *The are multiple examples of Gating Criteria. In this example, client IP was*     |
 |                                                                                              |
-| *to show that any changes in the connecting entity can result in establishing a new*         |
+| *used to show that any changes in the connecting entity can result in establishing a new*    |
 |                                                                                              |
 | *subsession. What happens in new subsessions, the number of subsessions and how they are*    |
 |                                                                                              |
