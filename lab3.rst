@@ -189,7 +189,7 @@ TASK 3: Extended Logon Subroutine
 +----------------------------------------------------------------------------------------------+
 | 11. In the resulting **Variable Assign** window, in the **Variable Assign** section, click   |
 |                                                                                              |
-|     the **Add new entry** button three(3) times. Click the **change** link in the first      |
+|     the **Add new entry** button four(4) times. Click the **change** link in the first       |
 |                                                                                              |
 |     **empty** row.                                                                           |
 +----------------------------------------------------------------------------------------------+
@@ -225,7 +225,7 @@ TASK 3: Extended Logon Subroutine
 |                                                                                              |
 | **ROW 2**                                                                                    |
 |                                                                                              |
-| - **LEFT SIDE**                                                                             |
+| - **LEFT SIDE**                                                                              |
 |                                                                                              |
 | * **Custom Variable**                                                                        |
 |                                                                                              |
@@ -233,7 +233,7 @@ TASK 3: Extended Logon Subroutine
 |                                                                                              |
 | * **Text Window:** **session.custom.jobTitle**                                               |
 |                                                                                              |
-| - **RIGHT SIDE**                                                                            |
+| - **RIGHT SIDE**                                                                             |
 |                                                                                              |
 | * **Session Variable**                                                                       |
 |                                                                                              |
@@ -254,10 +254,28 @@ TASK 3: Extended Logon Subroutine
 | * **Session Variable**                                                                       |
 |                                                                                              |
 | * **Text Window:** **subsession.http_connector.body.mobilePhone**                            |
+|                                                                                              |
+| **ROW 4**                                                                                    |
+|                                                                                              |
+| - **LEFT SIDE**                                                                              |
+|                                                                                              |
+| * **Custom Variable**                                                                        |
+|                                                                                              |
+| * **Unsecure**                                                                               |
+|                                                                                              |
+| * **Text Window:** **subsession.client.ip.address**                                          |
+|                                                                                              |
+| - **RIGHT SIDE**                                                                             |
+|                                                                                              |
+| * **Session Variable**                                                                       |
+|                                                                                              |
+| * **Text Window:** **perflow.client.ip.address**                                             |
 +----------------------------------------------------------------------------------------------+
 | |image018|                                                                                   |
 |                                                                                              |
 | |image019|                                                                                   |
+|                                                                                              |
+| |image042|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
@@ -407,6 +425,8 @@ TASK 6: Testing Gating Criteria
 |    access **App1**. Re-login to the application if necessary.                                |
 +----------------------------------------------------------------------------------------------+
 | |image025|                                                                                   |
+|                                                                                              |
+| |image040|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
@@ -429,6 +449,8 @@ TASK 6: Testing Gating Criteria
 |    the elevated Administrator privlege pop-up).                                              |
 +----------------------------------------------------------------------------------------------+
 | |image035|                                                                                   |
+|                                                                                              |
+| |image036|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
@@ -437,6 +459,10 @@ TASK 6: Testing Gating Criteria
 |    you will be re-prompted for access.                                                       |
 +----------------------------------------------------------------------------------------------+
 | |image025|                                                                                   |
+|                                                                                              |
+| |image100|                                                                                   |
+|                                                                                              |
+| |image041|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
@@ -446,7 +472,11 @@ TASK 6: Testing Gating Criteria
 |                                                                                              |
 |    with your session. (You may alternatively refresh the screen if already opened.)          |
 +----------------------------------------------------------------------------------------------+
-| |image100|                                                                                   |
+| |image037|                                                                                   |
+|                                                                                              |
+| |image038|                                                                                   |
+|                                                                                              |
+| |image039|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
@@ -574,6 +604,24 @@ TASK 7: End of Lab3
    :width: 4.5in
    :height: 2.32in
 .. |image036| image:: media/lab3-036.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image037| image:: media/lab3-037.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image038| image:: media/lab3-038.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image039| image:: media/lab3-039.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image040| image:: media/lab3-040.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image041| image:: media/lab3-041.png
+   :width: 4.5in
+   :height: 2.32in
+.. |image042| image:: media/lab3-042.png
    :width: 4.5in
    :height: 2.32in
 .. |image000| image:: media/image001.png
