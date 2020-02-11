@@ -340,59 +340,7 @@ TASK 7: Dynamic Group Checks
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 5. In the resulting window, click the **Authentication** tab, then select the radio button   |
-|                                                                                              |
-|    on the **AD Query** row, then click **Add Item**.                                         |
-+----------------------------------------------------------------------------------------------+
-| |image032|                                                                                   |
-+----------------------------------------------------------------------------------------------+
-
-+----------------------------------------------------------------------------------------------+
-| 6. In the resulting **AD Query** window, select **/Common/f5lab.local** from the **Server**  |
-|                                                                                              |
-|    dropdown.                                                                                 |
-|                                                                                              |
-| 7. Enter the following **sAMAccountName=%{subsession.logon.last.username}** in the           |
-|                                                                                              |
-|    **SearchFilter** field.                                                                   |
-|                                                                                              |
-| 8. Under the **Required Attributes** section click the **X** icon for all attributes except  |
-|                                                                                              |
-|    **memberOf** (row 9).                                                                     |
-+----------------------------------------------------------------------------------------------+
-| |image033|                                                                                   |
-|                                                                                              |
-| |image034|                                                                                   |
-+----------------------------------------------------------------------------------------------+
-
-+----------------------------------------------------------------------------------------------+
-| 9. In the **Dynamic GroupCheck** Subroutine, click the **Subroutine Settings / Rename** link |
-+----------------------------------------------------------------------------------------------+
-| |image035|                                                                                   |
-+----------------------------------------------------------------------------------------------+
-
-+----------------------------------------------------------------------------------------------+
-| 10. In the **Dynamic GroupCheck** Subroutine Settings change the following values:           |
-|                                                                                              |
-| - **Inactivity Timeout (sec): 60**                                                           |
-|                                                                                              |
-| - **Max Subsession Life (sec): 60**                                                          |
-|                                                                                              |
-| - **Subroutine Timeout (sec): 120**                                                          |
-|                                                                                              |
-| 11. Click the **Save** button.                                                               |
-+----------------------------------------------------------------------------------------------+
-| |image036|                                                                                   |
-+----------------------------------------------------------------------------------------------+
-
-+----------------------------------------------------------------------------------------------+
-| 12. In the **Dynamic GroupCheck** Subroutine click the **+ (Plus Symbol)** before AD Query   |                                                             
-+----------------------------------------------------------------------------------------------+
-| |image060|                                                                                   |
-+----------------------------------------------------------------------------------------------+
-
-+----------------------------------------------------------------------------------------------+
-| 13. In the resulting window, click the **Assignment** tab, then select the radio button on   |
+| 5. In the resulting window, click the **Assignment** tab, then select the radio button on    |
 |                                                                                              |
 |     the **Variable Assign** row, then the click **Add Item** button.                         |
 +----------------------------------------------------------------------------------------------+
@@ -400,40 +348,96 @@ TASK 7: Dynamic Group Checks
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 14. In the **Variable Assign** window, click the **Add new entry** button.                   |
+| 6. In the **Variable Assign** window, click the **Add new entry** button.                    |
 +----------------------------------------------------------------------------------------------+
 | |image062|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 15. Modify the empty assignment as follows, then click the **Finished** button.              |
+| 7. Modify the empty assignment as follows, then click the **Finished** button.               |
 |                                                                                              |
-|- **Custom Variable: subsession.logon.last.username**                                         |
+|    - **Custom Variable: subsession.logon.last.username**                                     |
 |                                                                                              |
-|- **Session Variable: session.logon.last.username**                                           |
+|    - **Session Variable: session.logon.last.username**                                       |
 +----------------------------------------------------------------------------------------------+
 | |image063|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 16. Verify the variable assignment, then click the **Save** button.                          |
+| 8. Verify the variable assignment, then click the **Save** button.                           |
 +----------------------------------------------------------------------------------------------+
 | |image064|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 17. Verify the **Dynamic GroupCheck** Subroutine contains both AD Query and Variable Assign  |
+| 9. In the **Dynamic GroupCheck** Subroutine click the **+ (Plus Symbol)** following the      |
+|                                                                                              |
+|    **Variable Assign**                                                                       |                                                              
++----------------------------------------------------------------------------------------------+
+| |image060|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------+
+| 10. In the resulting window, click the **Authentication** tab, then select the radio button  |
+|                                                                                              |
+|     on the **AD Query** row, then click **Add Item**.                                        |
++----------------------------------------------------------------------------------------------+
+| |image032|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------+
+| 11. In the resulting **AD Query** window, select **/Common/f5lab.local** from the **Server** |
+|                                                                                              |
+|     dropdown.                                                                                |
+|                                                                                              |
+| 12. Enter the following **sAMAccountName=%{subsession.logon.last.username}** in the          |
+|                                                                                              |
+|    **SearchFilter** field.                                                                   |
+|                                                                                              |
+| 13. Under the **Required Attributes** section click the **X** icon for all attributes except |
+|                                                                                              |
+|    **memberOf** (row 9).                                                                     |
+|                                                                                              |
+| 14. Click the **Save** button when completed.                                                |
++----------------------------------------------------------------------------------------------+
+| |image033|                                                                                   |
+|                                                                                              |
+| |image034|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------+
+| 15. In the **Dynamic GroupCheck** Subroutine, click the **Subroutine Settings/Rename** link. |
++----------------------------------------------------------------------------------------------+
+| |image035|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------+
+| 16. In the **Dynamic GroupCheck** Subroutine Settings change the following values:           |
+|                                                                                              |
+| - **Inactivity Timeout (sec): 60**                                                           |
+|                                                                                              |
+| - **Max Subsession Life (sec): 60**                                                          |
+|                                                                                              |
+| - **Subroutine Timeout (sec): 120**                                                          |
+|                                                                                              |
+| 17. Click the **Save** button.                                                               |
++----------------------------------------------------------------------------------------------+
+| |image036|                                                                                   |
++----------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------+
+| 18. Verify the **Dynamic GroupCheck** Subroutine contains both AD Query and Variable Assign  |
 |     objects.                                                                                 |
 +----------------------------------------------------------------------------------------------+
 | |image065|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 18. In the main section of the **app.acme.com_prp** policy click the **+ (Plus Symbol)** in  |
+| 19. In the main section of the **app.acme.com_prp** policy click the **+ (Plus Symbol)** in  |
 |                                                                                              |
 |     both the **apps** and **member** branches.                                               |
 |                                                                                              |
-| 19. In the resulting pop-up window, click the **Subroutines** tab, the click the radio       |
+| 20. In the resulting pop-up window, click the **Subroutines** tab, the click the radio       |
 |                                                                                              |
 |     button on the **Dynamic GroupCheck** and then click the **Add Item** button. Do this     |
 |                                                                                              |
@@ -443,7 +447,7 @@ TASK 7: Dynamic Group Checks
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 20. Review the policy changes to confirm subroutines have been added correctly.              |
+| 21. Review the policy changes to confirm subroutines have been added correctly.              |
 +----------------------------------------------------------------------------------------------+
 | |image038|                                                                                   |
 +----------------------------------------------------------------------------------------------+
