@@ -342,7 +342,7 @@ TASK 7: Dynamic Group Checks
 +----------------------------------------------------------------------------------------------+
 | 5. In the resulting window, click the **Assignment** tab, then select the radio button on    |
 |                                                                                              |
-|     the **Variable Assign** row, then the click **Add Item** button.                         |
+|    the **Variable Assign** row, then the click **Add Item** button.                          |
 +----------------------------------------------------------------------------------------------+
 | |image061|                                                                                   |
 +----------------------------------------------------------------------------------------------+
@@ -392,11 +392,11 @@ TASK 7: Dynamic Group Checks
 |                                                                                              |
 | 12. Enter the following **sAMAccountName=%{subsession.logon.last.username}** in the          |
 |                                                                                              |
-|    **SearchFilter** field.                                                                   |
+|     **SearchFilter** field.                                                                  |
 |                                                                                              |
 | 13. Under the **Required Attributes** section click the **X** icon for all attributes except |
 |                                                                                              |
-|    **memberOf** (row 9).                                                                     |
+|     **memberOf** (row 9).                                                                    |
 |                                                                                              |
 | 14. Click the **Save** button when completed.                                                |
 +----------------------------------------------------------------------------------------------+
@@ -470,19 +470,19 @@ TASK 8: Testing Dynamic Group Checks
 +----------------------------------------------------------------------------------------------+
 | 2. Return to **Firefox** test access to applications **app1**, **app2** and **app3**.        |
 |                                                                                              |
-|    Note 60 seconds should elapse (the subsession timeout) before testing access to the       |
+|    **Note:** *60 seconds should elapse (the subsession timeout) before testing access to*    |
 |                                                                                              |
-|    applications begin.                                                                       |
+|    *the applications begin.*                                                                 |
 +----------------------------------------------------------------------------------------------+
 | |image040|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 3. Test access to the **ServiceB** applications.                                             |
+| 3. Test access to the **ServiceB** application.                                              |
 |                                                                                              |
-|    Note 60 seconds should elapse (the subsession timeout) before testing access to the       |
+|    **Note:** *60 seconds should elapse (the subsession timeout) before testing access to*    |
 |                                                                                              |
-|    applications begin.                                                                       |
+|    *the application begins.*                                                                 |
 +----------------------------------------------------------------------------------------------+
 | |image045|                                                                                   |
 |                                                                                              |
@@ -492,9 +492,9 @@ TASK 8: Testing Dynamic Group Checks
 +----------------------------------------------------------------------------------------------+
 | 4. Return to Jumphost desktop and run the **Remove-User1-from-App2**.                        |
 |                                                                                              |
-| 5. Return to **Firefox** test access to application **app2**. Note 60 seconds should elapse  |
+| 5. Return to **Firefox** test access to application **app2**. **Note:** *60 seconds should*  |
 |                                                                                              |
-|    (the subsession timeout) before testing to the application begins.                        |
+|    *elapse (the subsession timeout) before testing to the application begins.*               |
 +----------------------------------------------------------------------------------------------+
 | |image041|                                                                                   |
 +----------------------------------------------------------------------------------------------+
@@ -503,7 +503,7 @@ TASK 9: Step-Up Authentication (Client Cert Auth)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +----------------------------------------------------------------------------------------------+
-| 1. Navigate to **Access -> Profiles/Policies -> Per-Request Policies and then click the      |
+| 1. Navigate to **Access -> Profiles/Policies -> Per-Request Policies** and then click the    |
 |                                                                                              |
 |    **Edit** link for the **app.acme.com_prp** Per Request Policy (or use the already open    |
 |                                                                                              |
@@ -531,7 +531,7 @@ TASK 9: Step-Up Authentication (Client Cert Auth)
 +----------------------------------------------------------------------------------------------+
 | 5. In the resulting window, click the **Authentication** tab, then select the radio button   |
 |                                                                                              |
-|     on the **0n-Demand Cert Auth** row, then click **Add Item**.                             |
+|    on the **0n-Demand Cert Auth** row, then click **Add Item**.                              |
 +----------------------------------------------------------------------------------------------+
 | |image050|                                                                                   |
 +----------------------------------------------------------------------------------------------+
