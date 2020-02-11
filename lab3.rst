@@ -1,6 +1,3 @@
-NOTE: This lab has a publication error which I am currently correcting and will be completed by 2/10/2020
-
-
 Lab 3: Custom Per Request Policy - Extended
 ===========================================
 
@@ -63,9 +60,9 @@ TASK 2: Review HTTP Connector Configuration
 |                                                                                              |
 | 2. Click on the **http_connector_transport** link.                                           |
 |                                                                                              |
-|    This configured resource provides DNS resolution and HTTPS functionality enabling access  |
+| **Note:** *This configured resource provides DNS resolution and HTTPS functionality*         |
 |                                                                                              |
-|    to queried Web Service and API endpoints.                                                 |
+| * enabling access to queried Web Service and API endpoints.*                                 |
 +----------------------------------------------------------------------------------------------+
 | |image003|                                                                                   |
 |                                                                                              |
@@ -77,15 +74,15 @@ TASK 2: Review HTTP Connector Configuration
 |                                                                                              |
 | 2. Click on the **MSGraphAPI_RequestToken** link.                                            |
 |                                                                                              |
-|    This configured resource retrieves an oAuth Bearer Token to be used to query the          |
+| **Note:** *This configured resource retrieves an oAuth Bearer Token to be used to query the* |
 |                                                                                              |
-|    Microsoft Graph API.                                                                      |
+| *Microsoft Graph API.*                                                                       |
 |                                                                                              |
-|    Note: While values like tenant_id, client_id & client_secret have been statically         |
+| **Note:** *While values like tenant_id, client_id & client_secret have been statically*      |
 |                                                                                              |
-|    entered for the purposes of this lab, these could have been referenced variables set      |
+| *entered for the purposes of this lab, these could have been referenced variables set*       |
 |                                                                                              |
-|    in the Per Request Policy flow.                                                           |
+| *in the Per Request Policy flow.*                                                            |
 +----------------------------------------------------------------------------------------------+
 | |image005|                                                                                   |
 |                                                                                              |
@@ -97,11 +94,11 @@ TASK 2: Review HTTP Connector Configuration
 |                                                                                              |
 | 2. Click on the **MSGraphAPI_GetUserProfile** link.                                          |
 |                                                                                              |
-|    This configured resource uses a previously obtained oAuth Bearer Token and queries the    |
+| **Note:** *This configured resource uses a previously obtained oAuth Bearer Token and*       |
 |                                                                                              |
-|    Microsoft Graph API for the queried user's profile information.                           |
+| *queries the Microsoft Graph API for the queried user's profile information.*                |
 |                                                                                              |
-|    Note: The Application (client_id) has been granted API Permissions for User.Read.All      |
+| **Note:** *The Application (client_id) has been granted API Permissions for User.Read.All*   |
 +----------------------------------------------------------------------------------------------+
 | |image007|                                                                                   |
 |                                                                                              |
@@ -116,7 +113,7 @@ TASK 3: Extended Logon Subroutine
 |                                                                                              |
 |    **Edit** link for the **app.acme.com_prp** Per Request Policy.                            |
 |                                                                                              |
-|    Note: This may already be open.                                                           |
+| **Note:** *This may already be open.*                                                        |
 +----------------------------------------------------------------------------------------------+
 | |image100|                                                                                   |
 +----------------------------------------------------------------------------------------------+
@@ -176,11 +173,11 @@ TASK 3: Extended Logon Subroutine
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| Note: The extending of Per Request Policies using the HTTP Connector can be leveraged to     |
+| **Note:** *The extending of Per Request Policies using the HTTP Connector can be leveraged*  |
 |                                                                                              |
-| query any Web Service or API endpoint.  In this case, MS Graph API is being leveraged to     |
+| *to query any Web Service or API endpoint.  In this case, MS Graph API is being leveraged*   |
 |                                                                                              |
-| retrieve additional information regarding a logged in user.                                  |
+| *to retrieve additional information regarding a logged in user.*                             |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
@@ -228,7 +225,7 @@ TASK 3: Extended Logon Subroutine
 |                                                                                              |
 | **ROW 2**                                                                                    |
 |                                                                                              |
-| -  **LEFT SIDE**                                                                             |
+| - **LEFT SIDE**                                                                             |
 |                                                                                              |
 | * **Custom Variable**                                                                        |
 |                                                                                              |
@@ -236,7 +233,7 @@ TASK 3: Extended Logon Subroutine
 |                                                                                              |
 | * **Text Window:** **session.custom.jobTitle**                                               |
 |                                                                                              |
-| -  **RIGHT SIDE**                                                                            |
+| - **RIGHT SIDE**                                                                            |
 |                                                                                              |
 | * **Session Variable**                                                                       |
 |                                                                                              |
@@ -288,9 +285,9 @@ TASK 3: Extended Logon Subroutine
 +----------------------------------------------------------------------------------------------+
 | 18. In the resulting **HTTP Headers** window, click the **Add new entry** button three(3)    |
 |                                                                                              |
-| times to add three(3) rows in the **Header Modify Section**.  Use the following values to    |
+|     times to add three(3) rows in the **Header Modify Section**.  Use the following values   |
 |                                                                                              |
-| complete each added row.                                                                     |
+|     to complete each added row.                                                              |
 |                                                                                              |
 | **ROW 1**                                                                                    |
 |                                                                                              |
@@ -367,7 +364,7 @@ TASK 4: Testing & Reviewing the Extended Logon Subroutine
 +----------------------------------------------------------------------------------------------+
 | 7. Review the actions in the Session log, particularly those associated with HTTP Connector  |
 |                                                                                              |
-| requests.                                                                                    |
+|    requests.                                                                                 |
 +----------------------------------------------------------------------------------------------+
 | |image029|                                                                                   |
 +----------------------------------------------------------------------------------------------+
@@ -402,12 +399,12 @@ TASK 5: Configuring Gating Criteria
 +----------------------------------------------------------------------------------------------+
 
 TASK 6: Testing Gating Criteria 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +----------------------------------------------------------------------------------------------+
 | 1. Return to Firefox on the **Jumphost** test access to the **app.acme.com** application and |
 |                                                                                              |
-|    access App1. Re-login to the application if necessary.                                    |
+|    access **App1**. Re-login to the application if necessary.                                |
 +----------------------------------------------------------------------------------------------+
 | |image025|                                                                                   |
 +----------------------------------------------------------------------------------------------+
@@ -417,7 +414,7 @@ TASK 6: Testing Gating Criteria
 |                                                                                              |
 |    **Access -> Overview -> Active Sessions**. Expand the **+ (Plus Symbol)** to see the      |
 |                                                                                              |
-|     subsession.                                                                              |
+|    subsession.                                                                               |
 +----------------------------------------------------------------------------------------------+
 | |image100|                                                                                   |
 +----------------------------------------------------------------------------------------------+
@@ -443,19 +440,19 @@ TASK 6: Testing Gating Criteria
 |                                                                                              |
 |    **Sessions**. Expand the **+ (Plus Symbol)** to see the two(2) subsessions now associated |
 |                                                                                              |
-|     with your session. (You may alternatively refresh the screen if already opened.          |
+|    with your session. (You may alternatively refresh the screen if already opened.           |
 +----------------------------------------------------------------------------------------------+
 | |image100|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| Note: The are multiple examples of Gating Criteria. In this example, client IP was used to   |
+| **Note:* *The are multiple examples of Gating Criteria. In this example, client IP was used* |
 |                                                                                              |
-| show that any changes in the connecting entity can result in establishing a new subsession.  |
+| *to show that any changes in the connecting entity can result in establishing a new*         |
 |                                                                                              |
-| What happens in new subsessions, the number of subsessions and how they are controlled is    |
+| *subsession. What happens in new subsessions, the number of subsessions and how they are*    |
 |                                                                                              |
-| based on customer/application need.                                                          |
+| *controlled is based on the individual customer/application need.                            |
 +----------------------------------------------------------------------------------------------+
 | |image100|                                                                                   |
 +----------------------------------------------------------------------------------------------+
