@@ -428,7 +428,7 @@ TASK 6: Testing Gating Criteria
 |                                                                                              |
 |    the elevated Administrator privlege pop-up).                                              |
 +----------------------------------------------------------------------------------------------+
-| |image100|                                                                                   |
+| |image035|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
@@ -574,48 +574,6 @@ TASK 7: End of Lab3
    :width: 4.5in
    :height: 2.32in
 .. |image036| image:: media/lab3-036.png
-   :width: 4.5in
-   :height: 2.32in
-.. |image037| image:: media/lab3-037.png
-   :width: 4.5in
-   :height: 2.32in
-.. |image038| image:: media/lab3-038.png
-   :width: 4.5in
-   :height: 2.32in
-.. |image039| image:: media/lab3-039.png
-   :width: 4.5in
-   :height: 2.32in
-.. |image040| image:: media/lab3-040.png
-   :width: 4.5in
-   :height: 2.32in
-.. |image041| image:: media/lab3-041.png
-   :width: 4.5in
-   :height: 2.32in
-.. |image042| image:: media/lab3-042.png
-   :width: 4.5in
-   :height: 2.32in
-.. |image043| image:: media/lab3-043.png
-   :width: 4.5in
-   :height: 2.32in
-.. |image044| image:: media/lab3-044.png
-   :width: 4.5in
-   :height: 2.32in
-.. |image045| image:: media/lab3-045.png
-   :width: 4.5in
-   :height: 2.32in
-.. |image046| image:: media/lab3-046.png
-   :width: 4.5in
-   :height: 2.32in
-.. |image047| image:: media/lab3-047.png
-   :width: 4.5in
-   :height: 2.32in
-.. |image048| image:: media/lab3-048.png
-   :width: 4.5in
-   :height: 2.32in
-.. |image049| image:: media/lab3-049.png
-   :width: 4.5in
-   :height: 2.32in
-.. |image050| image:: media/lab3-050.png
    :width: 4.5in
    :height: 2.32in
 .. |image000| image:: media/image001.png
