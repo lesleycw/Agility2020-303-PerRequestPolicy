@@ -35,9 +35,9 @@ TASK 1: Prepare Lab Environment
 |                                                                                              |
 |    confirm all active sessions have been killed.                                             |
 |                                                                                              |
-| 2. If any sessions are active, click all checkboxes by the active session and the click      |
+| 2. If any sessions are active, click all checkboxes by the active session and then click     |
 |                                                                                              |
-|    **Kill Selected Sessions** button.  In the resulting dialogue window ensure the           |
+|    the **Kill Selected Sessions** button.  In the resulting dialogue window ensure the       |
 |                                                                                              |
 |    **Session ID/Subsession ID** is checked and click the **Delete** button.                  |
 |                                                                                              |
@@ -379,7 +379,7 @@ TASK 5: Configuring Gating Criteria
 |                                                                                              |
 | **Note:** *This may already be open.*                                                        |
 +----------------------------------------------------------------------------------------------+
-| |image100|                                                                                   |
+| |image032|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
