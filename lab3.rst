@@ -62,7 +62,7 @@ TASK 2: Review HTTP Connector Configuration
 |                                                                                              |
 | **Note:** *This configured resource provides DNS resolution and HTTPS functionality*         |
 |                                                                                              |
-| * enabling access to queried Web Service and API endpoints.*                                 |
+| *enabling access to queried Web Service and API endpoints.*                                  |
 +----------------------------------------------------------------------------------------------+
 | |image003|                                                                                   |
 |                                                                                              |
@@ -115,7 +115,7 @@ TASK 3: Extended Logon Subroutine
 |                                                                                              |
 | **Note:** *This may already be open.*                                                        |
 +----------------------------------------------------------------------------------------------+
-| |image100|                                                                                   |
+| |image032|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
@@ -147,9 +147,9 @@ TASK 3: Extended Logon Subroutine
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 6. In the **Logon** subroutine and click the **+ (Plus Symbol) on the **Successful** branch  |
+| 6. In the **Logon** subroutine and click the **+ (Plus Symbol)** on the **Successful**       |
 |                                                                                              |
-|    following the **MSGraphAPI Request Token** and before the **Variable Assign**.            |
+|    branch following the **MSGraphAPI Request Token** and before the **Variable Assign**.     |
 |                                                                                              |
 | 7. In the pop-up window, select the **General Purpose** tab, then click the radio button     |
 |                                                                                              |
@@ -267,7 +267,7 @@ TASK 3: Extended Logon Subroutine
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 16. In the **Per-Request Policy** section, click the **+ (Plus Symbol) on the **Allow**      |
+| 16. In the **Per-Request Policy** section, click the **+ (Plus Symbol)** on the **Allow**    |
 |                                                                                              |
 |     branch following the **Logon** subroutine and the **URL Branching** agent.               |
 +----------------------------------------------------------------------------------------------+
@@ -354,11 +354,11 @@ TASK 4: Testing & Reviewing the Extended Logon Subroutine
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 6. Navigate to **Access -> Overview -> Active Sessions**. Click on the **View** link in the  |
+| 6. Navigate to **Access -> Overview -> Active Sessions**. Click on the **Session ID** link   |
 |                                                                                              |
-|    **Variables** column for the listed session.                                              |
+|    in the **Session ID** column for the listed active session.                               |
 +----------------------------------------------------------------------------------------------+
-| |image100|                                                                                   |
+| |image034|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
@@ -377,7 +377,7 @@ TASK 5: Configuring Gating Criteria
 |                                                                                              |
 |    **Edit** link for the **app.acme.com_prp** Per Request Policy.                            |
 |                                                                                              |
-|    Note: This may already be open.                                                           |
+| **Note:** *This may already be open.*                                                        |
 +----------------------------------------------------------------------------------------------+
 | |image100|                                                                                   |
 +----------------------------------------------------------------------------------------------+
