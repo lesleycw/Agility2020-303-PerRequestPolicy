@@ -426,7 +426,7 @@ TASK 6: Testing Gating Criteria
 |                                                                                              |
 | 4. Navigate to the Jumphost desktop and click on the **Change IP 10.1.10.11** link (Confirm  |
 |                                                                                              |
-|    the elevated Administrator privlege).                                                     |
+|    the elevated Administrator privlege pop-up).                                              |
 +----------------------------------------------------------------------------------------------+
 | |image100|                                                                                   |
 +----------------------------------------------------------------------------------------------+
@@ -444,7 +444,7 @@ TASK 6: Testing Gating Criteria
 |                                                                                              |
 |    **Sessions**. Expand the **+ (Plus Symbol)** to see the two(2) subsessions now associated |
 |                                                                                              |
-|    with your session. (You may alternatively refresh the screen if already opened.           |
+|    with your session. (You may alternatively refresh the screen if already opened.)          |
 +----------------------------------------------------------------------------------------------+
 | |image100|                                                                                   |
 +----------------------------------------------------------------------------------------------+
