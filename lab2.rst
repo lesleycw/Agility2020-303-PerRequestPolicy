@@ -187,11 +187,11 @@ TASK 4: URI DataGroup Filtering (via AD Group Membership)
 +----------------------------------------------------------------------------------------------+
 | 1. In the Visual Policy Editor window, click on the **+ (Plus Symbol)** on the **members**   |
 |                                                                                              |
-| branch following **URL Branching**.                                                          |
+|    branch following **URL Branching**.                                                       |
 |                                                                                              |
 | 2. In the pop-up window, select the **General Purpose** tab, then click the radio button     |
 |                                                                                              |
-| on the **Empty** action line, then click **Add Item**.                                       |
+|    on the **Empty** action line, then click **Add Item**.                                    |
 +----------------------------------------------------------------------------------------------+
 | |image017|                                                                                   |
 +----------------------------------------------------------------------------------------------+
@@ -217,16 +217,18 @@ TASK 4: URI DataGroup Filtering (via AD Group Membership)
 |                                                                                              |
 | 8. Paste the expression below into the provided window and then click **Finished**.          |
 |                                                                                              |
-| Explanation: For environments in which URI's and AD Groups may not be standardized, parsing  |
+| **Explanation:** *For environments in which URI's and AD Groups may not be standardized,*    |
 |                                                                                              |
-| the URI and then leveraging a Data Group match allows for more non-standard matching between |
+| *parsing the URI and then leveraging a Data Group match allows for non-standard matching*    |
 |                                                                                              |
-| URI and AD Groups. (Data Groups are updateble through REST (AS3 Declarations) calls.         |
+| *between URI and AD Groups. (Data Groups can be updated via REST (AS3 Declarations) calls.*  |
 +----------------------------------------------------------------------------------------------+
 | |image020|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
-'''expr {[mcget {subsession.ad.last.attr.memberOf}] contains "[class match -value [findstr [mcget {perflow.category_lookup.result.url}] "http" 28 "/"] eq acme_app.acme.com_dg]"}'''
+**Expression is shown below for copy and paste convenience**
+
+*expr {[mcget {subsession.ad.last.attr.memberOf}] contains "[class match -value [findstr [mcget {perflow.category_lookup.result.url}] "http" 28 "/"] eq acme_app.acme.com_dg]"}*
 
 +----------------------------------------------------------------------------------------------+
 | 9. Click **Save** in the resulting window.                                                   |
@@ -245,7 +247,7 @@ TASK 4: URI DataGroup Filtering (via AD Group Membership)
 +----------------------------------------------------------------------------------------------+
 | 11. In the adminstration window, navigate to **Local Traffic -> iRules -> Data Group List**  |
 |                                                                                              |
-|    and then click the **acme_app.acme.com_dg** data group link.                              |
+|     and then click the **acme_app.acme.com_dg** data group link.                             |
 +----------------------------------------------------------------------------------------------+
 | |image042|                                                                                   |
 +----------------------------------------------------------------------------------------------+
@@ -253,7 +255,7 @@ TASK 4: URI DataGroup Filtering (via AD Group Membership)
 +----------------------------------------------------------------------------------------------+
 | 12. In the **String** field, enter **serviceB** and in the **Value** field enter             |
 |                                                                                              |
-|    **CN=member-services-B,OU=Groups,DC=f5lab,DC=local then click the **Add** button.         |
+|     **CN=member-services-B,OU=Groups,DC=f5lab,DC=local then click the **Add** button.        |
 |                                                                                              |
 | 13. When correctly added, click the **Update** button.                                       |
 +----------------------------------------------------------------------------------------------+
