@@ -1,11 +1,11 @@
 Lab 2: Custom Per Request Policy
 ================================
 
-The purpose of this lab is to build a custom Per Request Policy flow (PRP) and
+The purpose of this lab is to build a custom Per Request Policy (PRP) flow and
 then extend that policy with additional subroutines to perform dynamic updates
 to access controls and authentication requirements. Per Request Policies will
-restict or grant access based on dynamic queries AD Group Membership and the
-URI accessed. Step-up authneitcation will also be leveraged.
+restict or grant access based on dynamic queries of AD Group Membership and the
+URI accessed. Step-up authenitcation will also be leveraged.
 Students will configure the various aspects using the Visual Policy Editor,
 review the configuration and perform tests of the deployment.
 
@@ -15,8 +15,8 @@ Objective:
 -  Gain a deeper understanding of Per Request Policies and their applicability
    in various delivery and control scenarios
  
--  Gain a further understanding of Per Request Policy Subroutines and their
-   use in dynamic queries, step authentication and HTTP connector queries.
+-  Gain a further understanding of Per Request Policy subroutines and their
+   use in dynamic queries and step-up authentication.
 
 Lab Requirements:
 -----------------
@@ -45,7 +45,7 @@ TASK 2: Review Existing Configuration
 +----------------------------------------------------------------------------------------------+
 | 1. On **bigip1.f5lab.local**, navigate to **Local Traffic -> Virtual Servers -> Virtual**    |
 |                                                                                              |
-|    ** Server Lists**.                                                                        |
+|    **Server Lists**.                                                                         |
 |                                                                                              |
 | 2. Click on the link for the **app.acme.com_vs**.                                            |
 +----------------------------------------------------------------------------------------------+
@@ -61,7 +61,7 @@ TASK 2: Review Existing Configuration
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 4. Navigate to **Access -> Profiles/Policies -> Access Profiles (Per-Session Policies) and   |
+| 4. Navigate to **Access -> Profiles/Policies -> Access Profiles (Per-Session Policies)** and |
 |                                                                                              |
 |    then click the **Edit** link for the **app.acme.com_psp** Per Session Policy.             |
 +----------------------------------------------------------------------------------------------+
@@ -77,7 +77,7 @@ TASK 2: Review Existing Configuration
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 6. Navigate to **Access -> Profiles/Policies -> Per-Request Policies and then click the      |
+| 6. Navigate to **Access -> Profiles/Policies -> Per-Request Policies** and then click the    |
 |                                                                                              |
 |    **Edit** link for the **app.acme.com_prp** Per Request Policy.                            |
 +----------------------------------------------------------------------------------------------+
@@ -85,7 +85,7 @@ TASK 2: Review Existing Configuration
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 7. Review the **app.acme.com_prp** Per Request Policy and the Subroutine.                    |
+| 7. Review the **app.acme.com_prp** Per Request Policy and the subroutine.                    |
 |                                                                                              |
 | 8. Click on the **+ (Plus Symbol)** to expand the **Logon** Subroutine.  Then click on the   |
 |                                                                                              |
@@ -95,7 +95,7 @@ TASK 2: Review Existing Configuration
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 9. Review the **Logon** Subroutine settings.  These settings will determine inactivity       |
+| 9. Review the **Logon** subroutine settings.  These settings will determine inactivity       |
 |                                                                                              |
 |    timers and session lifetime.                                                              |
 +----------------------------------------------------------------------------------------------+
@@ -163,7 +163,8 @@ TASK 3: URI Dynamic Filtering (via AD Group Membership)
 | |image014|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
-'''expr {[mcget {subsession.ad.last.attr.memberOf}] contains "CN=[findstr [mcget {perflow.category_lookup.result.url}] "http" 26 "/"],OU=Groups,DC=f5lab,DC=local"}'''
+**Expression is shown below for copy and paste convenience**
+*expr {[mcget {subsession.ad.last.attr.memberOf}] contains "CN=[findstr [mcget {perflow.category_lookup.result.url}] "http" 26 "/"],OU=Groups,DC=f5lab,DC=local"}*
 
 +----------------------------------------------------------------------------------------------+
 | 10. Click **Save** in the resulting window.                                                  |
@@ -185,11 +186,11 @@ TASK 4: URI DataGroup Filtering (via AD Group Membership)
 +----------------------------------------------------------------------------------------------+
 | 1. In the Visual Policy Editor window, click on the **+ (Plus Symbol)** on the **members**   |
 |                                                                                              |
-|     branch following **URL Branching**.                                                      |
+|  branch following **URL Branching**.                                                         |
 |                                                                                              |
 | 2. In the pop-up window, select the **General Purpose** tab, then click the radio button     |
 |                                                                                              |
-|    on the **Empty** action line, then click **Add Item**.                                    |
+|  on the **Empty** action line, then click **Add Item**.                                      |
 +----------------------------------------------------------------------------------------------+
 | |image017|                                                                                   |
 +----------------------------------------------------------------------------------------------+
@@ -251,7 +252,7 @@ TASK 4: URI DataGroup Filtering (via AD Group Membership)
 +----------------------------------------------------------------------------------------------+
 | 12. In the **String** field, enter **serviceB** and in the **Value** field enter             |
 |                                                                                              |
-|    **CN=member-services-B,OU=Groups,DC=f5lab,DC=local then click the **Add** button.        |
+|    **CN=member-services-B,OU=Groups,DC=f5lab,DC=local then click the **Add** button.         |
 |                                                                                              |
 | 13. When correctly added, click the **Update** button.                                       |
 +----------------------------------------------------------------------------------------------+
