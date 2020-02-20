@@ -627,4 +627,6 @@ TASK 7: End of Lab3
 .. |image000| image:: media/image001.png
    :width: 4.5in
    :height: 2.32in   
-   
+.. |image100| image:: media/image100.png
+   :width: 4.5in
+   :height: 2.32in      
