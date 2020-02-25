@@ -14,7 +14,7 @@ Host, where you will be able to access the BIG-IP management interfaces (HTTPS, 
 |                                                                                              |
 |    with the following credentials:                                                           |
 |                                                                                              |
-|    - **UserID: user1** / **Password: user1**                                                 |
+|    * **UserID: f5lab\\user1** \| **Password: user1**                                         |
 |                                                                                              |
 | 2. Access the BIG-IP GUI via https://10.1.1.4  You can also double-click on the **bigip1**   |
 |                                                                                              |
@@ -22,7 +22,7 @@ Host, where you will be able to access the BIG-IP management interfaces (HTTPS, 
 |                                                                                              |
 | 3. Login into the BIG-IP Configuration Utility with the following credentials:               |
 |                                                                                              |
-|    - **UserID: admin** / **Password: admin**                                                 |
+|    * **UserID: admin** \| **Password: admin**                                                |
 |                                                                                              |
 +----------------------------------------------------------------------------------------------+
 | Note: All work for this lab will be performed exclusively from the provided lab environment. |
