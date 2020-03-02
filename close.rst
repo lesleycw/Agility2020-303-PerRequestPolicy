@@ -10,7 +10,26 @@ explore the BIG-IP platform and Access Policy Manager (APM), its functionality
 
 Appendix
 ========
+Access Policy Manage (APM) Datasheet: https://www.f5.com/pdf/products/big-ip-access-policy-manager-ds.pdf
+Per Request Policy Concepts: https://techdocs.f5.com/en-us/bigip-15-1-0/big-ip-access-policy-manager-per-request-policies.html
+* About zero trust: https://techdocs.f5.com/en-us/bigip-15-1-0/big-ip-access-policy-manager-per-request-policies/per-request-policy-concepts/about-zero-trust.html
+* About per-request policies: https://techdocs.f5.com/en-us/bigip-15-1-0/big-ip-access-policy-manager-per-request-policies/per-request-policy-concepts/about-per-request-policies.html
+* About per-request policy subroutines: https://techdocs.f5.com/en-us/bigip-15-1-0/big-ip-access-policy-manager-per-request-policies/per-request-policy-concepts/about-per-request-policy-subroutines.html
+* About subsessions: https://techdocs.f5.com/en-us/bigip-15-1-0/big-ip-access-policy-manager-per-request-policies/per-request-policy-concepts/about-subsessions.html
+* About gating criteria in subroutines: https://techdocs.f5.com/en-us/bigip-15-1-0/big-ip-access-policy-manager-per-request-policies/per-request-policy-concepts/about-gating-criteria.html
 
+HTTP Connector Concepts: https://techdocs.f5.com/en-us/bigip-15-1-0/big-ip-access-policy-manager-per-request-policies/using-http-connector/about-http-connector.html
+* Defining an HTTP Connector Transport: https://techdocs.f5.com/en-us/bigip-15-1-0/big-ip-access-policy-manager-per-request-policies/using-http-connector/defining-http-connector-transport.html
+* Creating an HTTP Connector Request for an external IP blocklist: https://techdocs.f5.com/en-us/bigip-15-1-0/big-ip-access-policy-manager-per-request-policies/using-http-connector/creating-http-connector-request-external-IP-blocklist.html
+* Configuring a per-request policy for an HTTP Connector: https://techdocs.f5.com/en-us/bigip-15-1-0/big-ip-access-policy-manager-per-request-policies/using-http-connector/configuring-http-connector-request-prp.html
+* Adding an HTTP Connector to a subroutine to check an external blocklist: https://techdocs.f5.com/en-us/bigip-15-1-0/big-ip-access-policy-manager-per-request-policies/using-http-connector/configure-blocklist-check-subroutine.html
+* Adding the HTTP Connector subroutine to the per-request policy: https://techdocs.f5.com/en-us/bigip-15-1-0/big-ip-access-policy-manager-per-request-policies/using-http-connector/adding-http-connector-subroutine-prp.html
+* Creating an allow-all per-session policy: https://techdocs.f5.com/en-us/bigip-15-1-0/big-ip-access-policy-manager-per-request-policies/implementing-seamless-sso-azure-saml-mfa/creating-blank-per-session-policy.html
+* Creating a virtual server for the HTTP Connector policy: https://techdocs.f5.com/en-us/bigip-15-1-0/big-ip-access-policy-manager-per-request-policies/using-http-connector/creating-virtual-server-http-connector.html
+
+Visual Policy Editor Concepts: https://techdocs.f5.com/en-us/bigip-15-1-0/big-ip-access-policy-manager-visual-policy-editor.html
+* Session Variables Reference: https://techdocs.f5.com/en-us/bigip-15-1-0/big-ip-access-policy-manager-visual-policy-editor/session-variables/session-variables-reference.html 
+* Perflow and Subsession Variables: https://techdocs.f5.com/en-us/bigip-15-1-0/big-ip-access-policy-manager-visual-policy-editor/perflow-variables/per-flow-and-subsession-variables.html 
 
 +----------------------------------------------------------------------------------------------+
 | F5 Networks, Inc. \| f5.com                                                                  |
