@@ -12,7 +12,7 @@ Appendix
 ========
 **Access Policy Manage (APM)**:
   * **Datasheet**: https://www.f5.com/pdf/products/big-ip-access-policy-manager-ds.pdf
-  * **Documentation Portal**:
+  * **Documentation Portal**: https://support.f5.com/csp/knowledge-center/software/BIG-IP?module=BIG-IP%20APM&version=15.1.0
 
 **Per Request Policy**:
   * **Concepts**: https://techdocs.f5.com/en-us/bigip-15-1-0/big-ip-access-policy-manager-per-request-policies.html
