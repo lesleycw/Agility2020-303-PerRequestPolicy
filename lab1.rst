@@ -127,7 +127,7 @@ TASK 5: Multi Factor Authentication
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +----------------------------------------------------------------------------------------------+
-| 1. In the **Multi Factor Authenticatio** dialogue box, click **Save & Next** at the bottom   |
+| 1. In the **Multi Factor Authentication** dialogue box, click **Save & Next** at the bottom  |
 |                                                                                              |
 |    of the dialogue window.                                                                   |
 +----------------------------------------------------------------------------------------------+
@@ -385,7 +385,7 @@ TASK 9: Contextual Access
 |                                                                                              |
 | 15. Select **Application Group** from the **Resource Type** drop down.                       |
 |                                                                                              |
-| 16. Select **app1** from the **Resource** drop down.                                         |
+| 16. Select **base** from the **Resource** drop down.                                         |
 |                                                                                              |
 | 17. Select **agc-f5lab-AD** from the **Primary Authentication** drop down.                   |
 |                                                                                              |
